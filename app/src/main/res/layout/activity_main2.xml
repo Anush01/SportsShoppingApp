@@ -29,7 +29,7 @@
         android:layout_marginTop="4dp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:text="Delivering To 411001"
+        android:text="@string/delivering_to_411001"
         app:layout_constraintLeft_toLeftOf="@id/iv1"
         app:layout_constraintStart_toStartOf="@id/iv1"
         app:layout_constraintTop_toTopOf="@id/iv1" />
@@ -223,5 +223,16 @@
                     android:src="@drawable/imgv"
                     />
             </LinearLayout>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigatin_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="?android:attr/windowBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:menu="@menu/bottom_nav" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
