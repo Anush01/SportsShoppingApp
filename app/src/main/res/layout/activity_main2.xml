@@ -223,16 +223,46 @@
                     android:src="@drawable/imgv"
                     />
             </LinearLayout>
-            <com.google.android.material.bottomnavigation.BottomNavigationView
+            <LinearLayout
                 android:id="@+id/bottom_navigatin_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
+                android:orientation="horizontal"
                 android:layout_marginEnd="0dp"
-                android:background="?android:attr/windowBackground"
+                android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:menu="@menu/bottom_nav" />
+                app:menu="@menu/bottom_nav">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:padding="10dp"></ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:padding="10dp"></ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:padding="10dp"></ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sample text"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:padding="10dp"></ImageView>
+
+
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
