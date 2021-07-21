@@ -25,9 +25,11 @@ private void Slideme(){
     SliderView sliderView = findViewById(R.id.imageSlider);
 
     // adding the urls inside array list
-    sliderDataArrayList.add(new slide_item("https://gcdn.bookvip.com/bookvip/bookvip_en/static/hotels/652/o_1d7tgbonc5t3112u82e68lf8ef.jpg"));
-    sliderDataArrayList.add(new slide_item("https://gcdn.bookvip.com/bookvip/bookvip_en/static/hotels/652/o_1d7tgbonc5t3112u82e68lf8ef.jpg"));
-    sliderDataArrayList.add(new slide_item("https://gcdn.bookvip.com/bookvip/bookvip_en/static/hotels/652/o_1d7tgbonc5t3112u82e68lf8ef.jpg"));
+    sliderDataArrayList.add(new slide_item("https://www.linkpicture.com/q/ig1.png"));
+    sliderDataArrayList.add(new slide_item("https://www.linkpicture.com/q/slid2.png"));
+    sliderDataArrayList.add(new slide_item("https://www.linkpicture.com/q/sli3.png"));
+    sliderDataArrayList.add(new slide_item("https://www.linkpicture.com/q/slid3.png.jpeg"));
+    sliderDataArrayList.add(new slide_item("https://www.linkpicture.com/q/slide4.png.jpeg"));
 
     // passing this array list inside our adapter class.
     SliderAdapter adapter = new SliderAdapter(this, sliderDataArrayList);
