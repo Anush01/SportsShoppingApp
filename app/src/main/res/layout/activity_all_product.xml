@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".All_productActivity">
+    -<LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:id="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text="PW Mens Running shoes" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/cv2" android:layout_margin="20dp" app:layout_constraintLeft_toRightOf="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll2">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/blueshoe"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text=" pants" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:id="@+id/cv1980">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll980">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/mountainclimbing"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text="PW Mens Running shoes" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/cv2999" android:layout_margin="20dp" app:layout_constraintLeft_toRightOf="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll2999">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text=" pants" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:id="@+id/cv1701">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll600">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text="PW Mens Running shoes" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/cv2701" android:layout_margin="20dp" app:layout_constraintLeft_toRightOf="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll24">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text=" pants" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:id="@+id/cv1700">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll700">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:id="@+id/fl700" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll888">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text="PW Mens Running shoes" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/cv208" android:layout_margin="20dp" app:layout_constraintLeft_toRightOf="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll207">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:id="@+id/fl006" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll500">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text=" pants" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:id="@+id/cv106">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll205">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:id="@+id/fl002" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll004">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text="PW Mens Running shoes" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/cv203" android:layout_margin="20dp" app:layout_constraintLeft_toRightOf="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll202">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:id="@+id/fl1" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll902">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text=" pants" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="35dp" android:layout_marginTop="20dp" android:id="@+id/cv10">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll0001">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:id="@+id/ll001" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll101">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text="PW Mens Running shoes" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="200dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/cv22" android:layout_margin="20dp" app:layout_constraintLeft_toRightOf="@+id/cv1">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll212">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:layout_margin="20dp" android:src="@drawable/urbanshoes"/>
+
+
+    -<FrameLayout android:layout_height="70dp" android:layout_width="200dp" android:id="@+id/ll112" android:background="@color/white">
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ll11">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#f5bd03" android:textStyle="bold" android:textColor="#602076" android:padding="2dp" android:text=" Rs 500/- "/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:textStyle="italic" android:textColor="@color/black" android:padding="2dp" android:text=" original MRP Rs. 5000/- " android:textSize="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#fafafa" android:textColor="@color/black" android:padding="2dp" android:text=" pants" android:textSize="11dp" android:fontFamily="monospace"/>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
