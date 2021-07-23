@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/gotomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR ORDER SUMMARY!"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cv2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/orderview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR ORDER IS \n"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:textColor="#ff0000"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            ></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/btncheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:background="#FFD500"
+        android:padding="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="checkout"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:fontFamily="monospace"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:padding="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btncheckout"
+        android:text="Rs.0000/-"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:fontFamily="monospace"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
