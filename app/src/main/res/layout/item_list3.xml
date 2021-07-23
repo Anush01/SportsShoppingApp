@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivShoe2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sssssss" />
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivShoe2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_rectangle"
+                android:text="599"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMrp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRP"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tvMrpPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="899"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvDescrition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/tvRating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescrition2"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/small_rectangle"
+            android:drawablePadding="5dp"
+            android:text="4.5/5"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_baseline_star_rate_24" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
