@@ -30,6 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
     private RecyclerView recyclerView3;
     private RecyclerView recyclerView4;
     private RecyclerView recyclerView5;
+    private ImageView iv;
 
     private ArrayList<List1Model> list1ModelArrayList= new ArrayList<>();
     private ArrayList<List2Model> list1ModelArrayList1= new ArrayList<>();
@@ -59,7 +60,23 @@ public class MainActivity2 extends AppCompatActivity {
         openProduct();
         openurl();
         nav();
+        cart();
     }
+
+    private void cart() {
+
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i5 = new Intent(MainActivity2.this, cartActivity.class);
+                startActivity(i5);
+
+            }
+        });
+
+    }
+
     private void openurl(){
         click2=findViewById(R.id.boxa);
         click1=findViewById(R.id.box14);
@@ -167,6 +184,7 @@ private void Slideme(){
         recyclerView3=findViewById(R.id.recyclerView4);
         recyclerView4=findViewById(R.id.recyclerView6);
         recyclerView5=findViewById(R.id.recyclerView1);
+        iv = findViewById(R.id.iv);
 
 
     }

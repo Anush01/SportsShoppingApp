@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productViewActivity">
+
+    <ImageView
+        android:id="@+id/imageshoes"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/urbanshoes"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/shoeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" PW Mens Running shoes \n Grey/ Light Grey"
+        android:layout_below="@+id/imageshoes"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/shoeinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Great for outdoor running and sprinting \n Available in other colors too."
+        android:layout_below="@+id/shoeinfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="15dp"></TextView>
+
+    <TextView
+        android:id="@+id/taketocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/shoeinfo2"
+        android:layout_below="@+id/shoeinfo"
+        android:text="INR599/-"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+
+        android:background="#FFD500"
+        android:textColor="@color/black"
+
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/addtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shoeinfo2"
+        android:text="Add to Cart"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#FFD500"
+        android:padding="30dp"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/wishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shoeinfo2"
+        android:text=" Add to \n wishlist"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="#FFC0CB"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="20dp"
+        android:layout_marginTop="25dp"
+
+        ></TextView>
+
+</RelativeLayout>
