@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
     private ImageView click2;
     private ImageView c1;
     private ImageView c2;
+    private ImageView b2,b3,b4;
     private ImageView Box6;
     private View nav;
     private Button mbtn1;
@@ -115,6 +115,36 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 String url = "https://blog.decathlon.in/";
 
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+        b2.findViewById(R.id.boxb);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://blog.decathlon.in/search?query=How+to+maintain+a+marino+whool+garment%3F";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+        b3.findViewById(R.id.boxc);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://blog.decathlon.in/search?query=Top5+monsoon+Accessories+you+need";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+        b4.findViewById(R.id.boxd);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://blog.decathlon.in/search?query=Need+Guidance+for+your+sport%3F";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
