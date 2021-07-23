@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
     private ImageView click1;
     private ImageView click2;
     private ImageView Box6;
+    private View nav;
     private Button mbtn1;
     private RecyclerView recyclerView;
     private RecyclerView recyclerView1;
@@ -26,7 +28,9 @@ public class MainActivity2 extends AppCompatActivity {
     private RecyclerView recyclerView3;
     private RecyclerView recyclerView4;
     private RecyclerView recyclerView5;
+
     private ArrayList<List1Model> list1ModelArrayList= new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,7 @@ public class MainActivity2 extends AppCompatActivity {
         setRecyclerView6();
         openProduct();
         openurl();
+        nav();
     }
     private void openurl(){
         click2=findViewById(R.id.boxa);
@@ -75,34 +80,35 @@ public class MainActivity2 extends AppCompatActivity {
     }
     private void buildStudentList() {
         for(int i=0;i<5;i++) {
-            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "234", "good shoe", "789", "4.5/5"));
+            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "28974", "good shoe", "789", "4.5/5"));
         }
     }
     private void buildStudentList1() {
         for(int i=0;i<5;i++) {
-            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "234", "good shoe", "789", "4.5/5"));
+            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "554", "good shoe", "789", "4.5/5"));
         }
     }
     private void buildStudentList2() {
         for(int i=0;i<5;i++) {
-            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "234", "good shoe", "789", "4.5/5"));
+            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "2323", "good shoe", "789", "4.5/5"));
         }
     }
     private void buildStudentList3() {
         for(int i=0;i<5;i++) {
-            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "234", "good shoe", "789", "4.5/5"));
+            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "2324", "good shoe", "789", "4.5/5"));
         }
     }
     private void buildStudentList4() {
         for(int i=0;i<5;i++) {
-            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "234", "good shoe", "789", "4.5/5"));
+            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "224", "good shoe", "789", "4.5/5"));
         }
     }
     private void buildStudentList6() {
         for(int i=0;i<5;i++) {
-            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "234", "good shoe", "789", "4.5/5"));
+            list1ModelArrayList.add(new List1Model(R.drawable.shoe1, "230", "good shoe", "789", "4.5/5"));
         }
     }
+
 private void Slideme(){
     ArrayList<slide_item> sliderDataArrayList = new ArrayList<>();
     SliderView sliderView = findViewById(R.id.imageSlider);
@@ -125,6 +131,7 @@ private void Slideme(){
         recyclerView3=findViewById(R.id.recyclerView4);
         recyclerView4=findViewById(R.id.recyclerView6);
         recyclerView5=findViewById(R.id.recyclerView1);
+
 
     }
     public void setRecyclerView() {
@@ -186,6 +193,18 @@ private void Slideme(){
                 startActivity(intent);
             }
         });
+
+    }
+    private void nav(){
+        nav=findViewById(R.id.sports);
+        nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MainActivity2.this,SportsPage.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

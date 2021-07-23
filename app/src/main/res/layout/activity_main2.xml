@@ -136,7 +136,15 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:paddingLeft="15dp">
-
+                        <Button
+                            android:id="@+id/box0"
+                            style="@style/scroll"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/square"
+                            android:text="Our PROMISE"
+                            android:textSize="20dp"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false" />
                         <Button
                             android:id="@+id/box1"
                             style="@style/scroll"
@@ -154,7 +162,6 @@
                             android:text="Drive Through/Free Pickup Service "
                             android:textAlignment="center"
                             android:textAllCaps="false" />
-
                         <Button
                             android:id="@+id/box3"
                             style="@style/scroll"
@@ -164,7 +171,6 @@
                             android:text="Safe Delivery At Your Doorstep"
                             android:textAlignment="center"
                             android:textAllCaps="false" />
-
                         <Button
                             android:id="@+id/box4"
                             style="@style/scroll"

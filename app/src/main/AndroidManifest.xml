@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Decathlonapp">
-        <activity android:name=".All_productActivity"></activity>
+        <activity android:name=".SportsPage"></activity>
+        <activity android:name=".Productpage" />
+        <activity android:name=".All_productActivity" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
