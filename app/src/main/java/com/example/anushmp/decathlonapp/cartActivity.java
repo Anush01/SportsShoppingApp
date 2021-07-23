@@ -25,6 +25,8 @@ public class cartActivity extends AppCompatActivity {
 
             int price = getIntent().getIntExtra("price", 0000);
 
+            if(price == 0000){info = "";}
+
             total.setText(price + "");
             orderview.append("\n" + info);
 
