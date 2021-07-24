@@ -1,6 +1,7 @@
 package com.example.anushmp.decathlonapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,7 +59,20 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         if (i.size() != 0)
             isAdded = true;
 
-        holder.setData(currentProduct.getProductName(), currentProduct.getPrice(),isAdded);
+        holder.setData(currentProduct.getProductName(), currentProduct.getPrice(),isAdded, currentProduct.getImageUrl());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,Productpage.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("id",currentProduct.getProductId());
+                intent.putExtra("name",currentProduct.getProductName());
+                intent.putExtra("imageUrl",currentProduct.getImageUrl());
+                intent.putExtra("price",currentProduct.getPrice());
+                context.startActivity(intent);
+            }
+        });
 
         holder.add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +81,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
                 holder.add.setVisibility(View.INVISIBLE);
                 holder.remove.setVisibility(View.VISIBLE);
 
-                CartItem item = new CartItem(currentProduct.getProductId(), currentProduct.getPrice(), currentProduct.getProductName());
+                CartItem item = new CartItem(currentProduct.getProductId(), currentProduct.getPrice(), currentProduct.getProductName(), currentProduct.getImageUrl());
                 db.cartDao().insert(item);
             }
         });

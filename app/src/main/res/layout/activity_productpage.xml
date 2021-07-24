@@ -5,15 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Productpage">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:src="@drawable/pr0"
-    />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pr0" />
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,6 +28,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tvName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
@@ -34,6 +38,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -46,6 +51,7 @@
                     android:padding="20dp">
 
                     <TextView
+                        android:id="@+id/tvPrice"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/yellow_rectangle"
@@ -352,12 +358,13 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="MRP"
                     android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -371,9 +378,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Country of Origin"
                     android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -387,56 +394,55 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Manufactured/Imported By"
                     android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="decathlon_sports_india"
-                    />
+                    android:text="decathlon_sports_india" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Survey No-78/10, A2 - Chickajala Village, bellary Rd"
-                    />
+                    android:text="Survey No-78/10, A2 - Chickajala Village, bellary Rd" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bengaluru - 562157"
-                    />
+                    android:text="Bengaluru - 562157" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Karnataka, India"
-                    />
+                    android:text="Karnataka, India" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text=" For Customer Compliants/ Assistance, Please contact "
-                    />
+                    android:text=" For Customer Compliants/ Assistance, Please contact " />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="above importer address or Tel: +91 - 7676798989 Email:"
-                    />
+                    android:text="above importer address or Tel: +91 - 7676798989 Email:" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="care.india@decathlon.com"
-                    />
+                    android:text="care.india@decathlon.com" />
 
                 <Button
+                    android:id="@+id/btnAddToBag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add To bag"
                     android:background="@color/teal_200"
-                    android:textColor="@color/black"/>
+                    android:text="Add To bag"
+                    android:textColor="@color/black" />
 
             </LinearLayout>
 

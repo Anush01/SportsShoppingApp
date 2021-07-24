@@ -13,7 +13,7 @@ import com.example.anushmp.decathlonapp.ui.login.ProductDao;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {CartItem.class, Product.class}, version = 2, exportSchema = false)
+@Database(entities = {CartItem.class, Product.class}, version = 3, exportSchema = false)
 public abstract class ShoppingDatabase extends RoomDatabase {
 
     public abstract CartDao cartDao();

@@ -3,11 +3,13 @@ package com.example.anushmp.decathlonapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,7 +20,6 @@ import java.util.List;
 
 public class CartActivity extends AppCompatActivity {
 
-    CartDao cartDao;
     LiveData<List<CartItem>> cartItems;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,8 @@ public class CartActivity extends AppCompatActivity {
         cartItems.observe(this, new Observer<List<CartItem>>() {
             @Override
             public void onChanged(List<CartItem> cartItems) {
+
+                Log.d("cartdebug",cartItems.get(0).getProductName());
 
                 CartAdapter adapter = new CartAdapter(cartItems,getApplicationContext());
 

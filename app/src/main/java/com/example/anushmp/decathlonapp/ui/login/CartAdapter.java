@@ -1,6 +1,7 @@
 package com.example.anushmp.decathlonapp.ui.login;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,8 +57,9 @@ public class CartAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         ShoppingDatabase db = ShoppingDatabase.getDatabase(context);
         CartItem currentItem = list.get(position);
 
+        Log.d("cartdebug","inside bindviewholder");
 
-        holder.setData(currentItem.getProductName(), currentItem.getPrice(), true);
+        holder.setData(currentItem.getProductName(), currentItem.getPrice(), true,currentItem.getImageUrl());
 
 
         holder.remove.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +77,8 @@ public class CartAdapter extends RecyclerView.Adapter<ProductViewHolder> {
 
     @Override
     public int getItemCount() {
+        if (list!=null)
+            return list.size();
         return 0;
     }
 }

@@ -1,10 +1,14 @@
 package com.example.anushmp.decathlonapp;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
 
 public class ProductViewHolder extends RecyclerView.ViewHolder {
 
@@ -18,13 +22,16 @@ public class ProductViewHolder extends RecyclerView.ViewHolder {
         remove = itemView.findViewById(R.id.btnRemove);
     }
 
-    public void setData(String name,int price,boolean isAdded){
+    public void setData(String name,int price,boolean isAdded,String imageUrl){
 
+        Log.d("cartdebug","inside setdata");
         TextView tvName = itemView.findViewById(R.id.tvProductName);
         TextView tvPrice = itemView.findViewById(R.id.tvPrice);
+        ImageView ivImg = itemView.findViewById(R.id.ivImg);
 
         tvName.setText(name);
         tvPrice.setText(String.valueOf(price));
+        Picasso.get().load(imageUrl).into(ivImg);
 
         if (isAdded){
             add.setVisibility(View.INVISIBLE);
