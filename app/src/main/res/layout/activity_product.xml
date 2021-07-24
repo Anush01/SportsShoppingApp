@@ -8,8 +8,8 @@
     <androidx.recyclerview.widget.RecyclerView
         tools:listitem="@layout/product_item"
         android:id="@+id/products"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </RelativeLayout>

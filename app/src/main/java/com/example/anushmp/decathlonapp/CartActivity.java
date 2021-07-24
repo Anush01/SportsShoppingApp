@@ -49,8 +49,8 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onChanged(List<CartItem> cartItems) {
 
-//                Log.d("cartdebug",cartItems.get(0).getProductName());
-//
+
+
                 CartAdapter adapter = new CartAdapter(cartItems,getApplicationContext());
 
                 recyclerView.setAdapter(adapter);

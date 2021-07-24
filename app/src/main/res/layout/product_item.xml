@@ -1,46 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="70dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
     android:layout_marginStart="10dp"
     android:layout_marginTop="10dp"
     android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp" android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
 
-    android:layout_marginBottom="10dp">
-
-    <RelativeLayout
-        android:gravity="center"
-        android:layout_weight="4"
-        android:layout_width="0dp"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/ivImg"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/pr0" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:gravity="center"
         android:layout_weight="6"
         android:layout_width="0dp"
         android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pr0"
+            android:adjustViewBounds="true"/>
 
         <TextView
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/ivImg"
             android:layout_marginStart="5dp"
             android:id="@+id/tvProductName"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hocky stick"/>
 
         <TextView
+            android:textSize="20sp"
+            android:background="#fefe33"
             android:layout_marginStart="5dp"
             android:layout_below="@id/tvProductName"
             android:id="@+id/tvPrice"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rs. 500"/>
+        <LinearLayout
+            android:layout_below="@id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="4.43/5"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_half" />
+
+
+        </LinearLayout>
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_below="@+id/tvPrice"
             android:visibility="gone"
@@ -58,6 +103,7 @@
                 android:id="@+id/btnRemove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="visible"
                 android:text="Remove"/>
 
 
@@ -81,6 +127,9 @@
 
 
             </LinearLayout>
+
         </LinearLayout>
+
     </RelativeLayout>
-</LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>

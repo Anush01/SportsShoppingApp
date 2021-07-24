@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,8 @@ public class CheckoutActivity extends AppCompatActivity {
                         .setPositiveButton("Done", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                Intent intent = new Intent(CheckoutActivity.this,MainActivity2.class);
+                                startActivity(intent);
                                 ShoppingDatabase db = ShoppingDatabase.getDatabase(getApplicationContext());
                                 db.cartDao().deleteAll();
                                 finish();
@@ -36,6 +39,7 @@ public class CheckoutActivity extends AppCompatActivity {
                         .setNegativeButton("Failed", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+
 
                             }
                         })

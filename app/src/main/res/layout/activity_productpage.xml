@@ -440,9 +440,13 @@
                     android:id="@+id/btnAddToBag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/teal_200"
+                    android:background="#fefe33"
                     android:text="Add To bag"
-                    android:textColor="@color/black" />
+                    android:padding="10dp"
+                    android:drawableEnd="@drawable/ic_outline_shopping_bag_24"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
 
             </LinearLayout>
 
