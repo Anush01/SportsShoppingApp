@@ -20,7 +20,9 @@ public class MainActivity2 extends AppCompatActivity {
     private ImageView click2;
     private ImageView c1;
     private ImageView c2;
-    private ImageView b2,b3,b4;
+    private ImageView b2 ;
+    private ImageView b3 ;
+    private ImageView b4;
     private ImageView Box6;
     private View nav;
     private Button mbtn1;
@@ -31,7 +33,6 @@ public class MainActivity2 extends AppCompatActivity {
     private RecyclerView recyclerView4;
     private RecyclerView recyclerView5;
     private ImageView iv;
-
     private ArrayList<List1Model> list1ModelArrayList= new ArrayList<>();
     private ArrayList<List2Model> list1ModelArrayList1= new ArrayList<>();
     private ArrayList<List3Model> list1ModelArrayList2= new ArrayList<>();
@@ -61,15 +62,16 @@ public class MainActivity2 extends AppCompatActivity {
         openurl();
         nav();
         cart();
+
     }
 
     private void cart() {
-
+        iv = findViewById(R.id.iv);
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent i5 = new Intent(MainActivity2.this, cartActivity.class);
+                Intent i5 = new Intent(MainActivity2.this, oldcartActivity.class);
                 startActivity(i5);
 
             }
@@ -82,6 +84,9 @@ public class MainActivity2 extends AppCompatActivity {
         click1=findViewById(R.id.box14);
         c1=findViewById(R.id.box15);
         c2=findViewById(R.id.box16);
+        b2=findViewById(R.id.boxb);
+        b3=findViewById(R.id.boxc);
+        b4=findViewById(R.id.boxd);
         click1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,7 +125,7 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        b2.findViewById(R.id.boxb);
+
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,7 +135,7 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        b3.findViewById(R.id.boxc);
+
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -140,7 +145,7 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        b4.findViewById(R.id.boxd);
+
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -207,6 +212,8 @@ private void Slideme(){
     sliderView.setAutoCycle(true);
     sliderView.startAutoCycle();
 }
+
+
     private void initView() {
         recyclerView = findViewById(R.id.recyclerView5);
         recyclerView1=findViewById(R.id.recyclerView2);
@@ -214,10 +221,11 @@ private void Slideme(){
         recyclerView3=findViewById(R.id.recyclerView4);
         recyclerView4=findViewById(R.id.recyclerView6);
         recyclerView5=findViewById(R.id.recyclerView1);
-        iv = findViewById(R.id.iv);
+
 
 
     }
+
     public void setRecyclerView() {
         List1Adapter list1Adapter= new List1Adapter(list1ModelArrayList,this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity2.this,LinearLayoutManager.HORIZONTAL,false);
@@ -260,12 +268,14 @@ private void Slideme(){
         recyclerView5.setAdapter(list6Adapter);
 
     }
+
+
     public void openProduct(){
         Box6=findViewById(R.id.box6);
         Box6.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity2.this,All_productActivity.class);
+                Intent intent=new Intent(MainActivity2.this,ProductActivity.class);
                 startActivity(intent);
             }
         });
@@ -273,12 +283,14 @@ private void Slideme(){
         mbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity2.this,All_productActivity.class);
+                Intent intent=new Intent(MainActivity2.this,ProductActivity.class);
                 startActivity(intent);
             }
         });
 
     }
+
+
     private void nav(){
         nav=findViewById(R.id.sports);
         nav.setOnClickListener(new View.OnClickListener() {

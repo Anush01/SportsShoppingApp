@@ -29,7 +29,7 @@ public class SportsAdapter2 extends RecyclerView.Adapter<SportsViewHolder2> {
     @Override
     public void onBindViewHolder(@NonNull SportsViewHolder2 holder, int position) {
         SportsModel2 model2=sportsModels2.get(position);
-        holder.SetData2(model2);
+        holder.SetData(model2);
     }
 
     @Override

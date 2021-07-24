@@ -12,12 +12,12 @@ public class SportsViewHolder2 extends RecyclerView.ViewHolder {
 
     public SportsViewHolder2(@NonNull View itemView) {
         super(itemView);
-        intitView(itemView);
+        intitView();
     }
-    public void SetData2(SportsModel2 sportsModel2) {
-        mtvImage2.setImageResource(sportsModel2.getImageView());
+    public void SetData(SportsModel2 sportsModel2) {
+        mtvImage2.setImageResource(sportsModel2.getImageView1());
     }
-    private void intitView(View itemView) {
+    private void intitView() {
         mtvImage2 = this.itemView.findViewById(R.id.sp2);
     }
 }

@@ -8,7 +8,7 @@ public class SportsModel2 {
         this.imageView2 = imageView;
     }
 
-    public int getImageView() {
+    public int getImageView1() {
         return imageView2;
     }
 }

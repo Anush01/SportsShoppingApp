@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class SportsAdapter extends RecyclerView.Adapter<SportsViewHolder> {
-    private ArrayList<SportsModel> sportsModels;
+    private ArrayList<SportsModel> sportsModels1;
 
-
-    public SportsAdapter(ArrayList<SportsModel> sportsModelArrayList, SportsPage sportsPage) {
-        this.sportsModels=sportsModelArrayList;
+    public SportsAdapter(ArrayList<SportsModel> sportsModels1, SportsPage sportsPage) {
+        this.sportsModels1 = sportsModels1;
     }
+
 
     @NonNull
     @Override
@@ -26,13 +26,12 @@ public class SportsAdapter extends RecyclerView.Adapter<SportsViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull SportsViewHolder holder, int position) {
-        SportsModel model=sportsModels.get(position);
+        SportsModel model=sportsModels1.get(position);
         holder.SetData(model);
-
     }
 
     @Override
     public int getItemCount() {
-        return sportsModels.size();
+        return sportsModels1.size();
     }
 }

@@ -47,12 +47,17 @@ public class SportsPage extends AppCompatActivity {
         sportsModelArrayList.add(new SportsModel2(R.drawable.s15));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s16));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s17));
-        sportsModelArrayList.add(new SportsModel2(R.drawable.s18));sportsModelArrayList.add(new SportsModel2(R.drawable.s19));sportsModelArrayList.add(new SportsModel2(R.drawable.s20));
-        sportsModelArrayList.add(new SportsModel2(R.drawable.s21));sportsModelArrayList.add(new SportsModel2(R.drawable.s22));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s18));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s19));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s20));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s21));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s22));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s23));
-        sportsModelArrayList.add(new SportsModel2(R.drawable.s24));sportsModelArrayList.add(new SportsModel2(R.drawable.s25));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s24));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s25));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s26));
-        sportsModelArrayList.add(new SportsModel2(R.drawable.s27));sportsModelArrayList.add(new SportsModel2(R.drawable.s28));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s27));
+        sportsModelArrayList.add(new SportsModel2(R.drawable.s28));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s29));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s30));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s31));
@@ -72,7 +77,6 @@ public class SportsPage extends AppCompatActivity {
     }
     private void initView(){
         recyclerViews=findViewById(R.id.recyclerViews);
-
     }
     private void initView1(){
         recyclerViews2=findViewById(R.id.recyclerViews2);

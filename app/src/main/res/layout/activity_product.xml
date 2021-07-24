@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="">
-
+    tools:context=".ProductActivity">
     <androidx.recyclerview.widget.RecyclerView
         tools:listitem="@layout/product_item"
         android:id="@+id/products"
@@ -20,7 +19,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/black"
         android:gravity="center"
-        android:text="Cart"
+        android:text="Add To Bag"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class cartActivity extends AppCompatActivity {
+public class oldcartActivity extends AppCompatActivity {
 
     TextView total;
     TextView orderview;

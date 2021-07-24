@@ -9,14 +9,14 @@ public class SportsViewHolder extends RecyclerView.ViewHolder {
 
     public SportsViewHolder(@NonNull View itemView) {
         super(itemView);
-        intitView(itemView);
+        intitView();
     }
 
-    public void SetData( SportsModel model) {
-        mtvImageView.setImageResource(model.getImageView());
+    public void SetData( SportsModel sportsModel) {
+        mtvImageView.setImageResource(sportsModel.getImageView());
     }
 
-    private void intitView(View itemView) {
+    private void intitView() {
         mtvImageView = this.itemView.findViewById(R.id.sp1);
 
     }

@@ -24,5 +24,73 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViews2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="419dp"
+        android:layout_height="114dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="15dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSlider">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <Button
+                android:id="@+id/box0"
+                style="@style/scroll"
+                android:layout_height="match_parent"
+                android:background="@drawable/square"
+                android:text="Our PROMISE"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/box1"
+                style="@style/scroll"
+                android:background="@drawable/square"
+                android:drawableTop="@drawable/a10"
+                android:text="Minimum 2 rears warrenty"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/box2"
+                style="@style/scroll"
+                android:background="@drawable/square"
+                android:drawableTop="@drawable/a9"
+                android:text="Drive Through/Free Pickup Service "
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/box3"
+                style="@style/scroll"
+                android:layout_margin="7dp"
+                android:background="@drawable/square"
+                android:drawableTop="@drawable/a7"
+                android:text="Safe Delivery At Your Doorstep"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/box4"
+                style="@style/scroll"
+                android:layout_margin="12dp"
+                android:background="@drawable/square"
+                android:drawableTop="@drawable/a8"
+                android:text="Easy 90 Days Resturns"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
 </LinearLayout>
