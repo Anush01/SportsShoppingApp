@@ -12,13 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Decathlonapp">
-        <activity android:name=".ProductActivity"></activity>
+        <activity android:name=".Account_Activity2"></activity>
+        <activity android:name=".ProductActivity" />
         <activity android:name=".CartActivity" />
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".Otp_Activity" />
         <activity android:name=".Login_Activity" />
         <activity android:name=".AccountActivity" />
-        <activity android:name=".oldcartActivity" />
         <activity android:name=".SportsPage" />
         <activity android:name=".Productpage" />
         <activity android:name=".MainActivity2" />

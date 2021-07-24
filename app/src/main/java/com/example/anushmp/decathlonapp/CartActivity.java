@@ -25,7 +25,7 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
-
+        TextView empty=findViewById(R.id.tvEmpty);
         TextView checkout = findViewById(R.id.tvCart);
 
         checkout.setOnClickListener(new View.OnClickListener() {
@@ -49,8 +49,8 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onChanged(List<CartItem> cartItems) {
 
-                Log.d("cartdebug",cartItems.get(0).getProductName());
-
+//                Log.d("cartdebug",cartItems.get(0).getProductName());
+//
                 CartAdapter adapter = new CartAdapter(cartItems,getApplicationContext());
 
                 recyclerView.setAdapter(adapter);
@@ -62,7 +62,18 @@ public class CartActivity extends AppCompatActivity {
                 }
 
                 checkout.setText("Total: "+total+" --checkout");
+
+                if(total==0){
+                    empty.setVisibility(View.VISIBLE);
+                    recyclerView.setVisibility(View.GONE);
+                    checkout.setVisibility(View.GONE);
+                }else{
+                    empty.setVisibility(View.GONE);
+                    recyclerView.setVisibility(View.VISIBLE);
+                    checkout.setVisibility(View.VISIBLE);
+                }
             }
+
         });
     }
 }

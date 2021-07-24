@@ -70,8 +70,7 @@ public class MainActivity2 extends AppCompatActivity {
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent i5 = new Intent(MainActivity2.this, oldcartActivity.class);
+                Intent i5 = new Intent(MainActivity2.this, CartActivity.class);
                 startActivity(i5);
 
             }

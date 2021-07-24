@@ -55,7 +55,7 @@ public class ProductActivity extends AppCompatActivity {
         productDao = db.productDao();
 
 
-            productDao.insert(new Product(1,500,"Adidas","https://firebasestorage.googleapis.com/v0/b/decathlon-69573.appspot.com/o/index.jpg?alt=media&token=d253b4c8-d1bb-4839-afaf-23833af45030"));
+        productDao.insert(new Product(1,500,"Adidas","https://firebasestorage.googleapis.com/v0/b/decathlon-69573.appspot.com/o/index.jpg?alt=media&token=d253b4c8-d1bb-4839-afaf-23833af45030"));
         productDao.insert(new Product(2,500,"Puma","https://firebasestorage.googleapis.com/v0/b/decathlon-69573.appspot.com/o/shoes%2FWhatsApp%20Image%202021-07-23%20at%201.05.36%20PM.jpeg?alt=media&token=7076fa02-40a3-4bc7-b0ea-52e3963a2cb7"));
         productDao.insert(new Product(3,500,"xyz","https://firebasestorage.googleapis.com/v0/b/decathlon-69573.appspot.com/o/shoes%2FWhatsApp%20Image%202021-07-23%20at%201.05.37%20PM%20(1).jpeg?alt=media&token=3fd5d8a9-8506-49e6-82d2-c43e23a8fb90"));
         productDao.insert(new Product(4,400,"Adidas2","https://firebasestorage.googleapis.com/v0/b/decathlon-69573.appspot.com/o/shoes%2FWhatsApp%20Image%202021-07-23%20at%201.05.37%20PM.jpeg?alt=media&token=1fe77d52-a287-4633-845d-027fb9bd3234"));

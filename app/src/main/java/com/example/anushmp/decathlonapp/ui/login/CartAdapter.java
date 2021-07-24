@@ -60,7 +60,7 @@ public class CartAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         Log.d("cartdebug","inside bindviewholder");
 
         holder.setData(currentItem.getProductName(), currentItem.getPrice(), true,currentItem.getImageUrl());
-
+        holder.remove.setVisibility(View.VISIBLE);
 
         holder.remove.setOnClickListener(new View.OnClickListener() {
             @Override
