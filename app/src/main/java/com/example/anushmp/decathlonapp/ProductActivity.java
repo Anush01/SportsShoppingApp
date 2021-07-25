@@ -4,13 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
 import com.example.anushmp.decathlonapp.data.model.Product;
 import com.example.anushmp.decathlonapp.ui.login.CartDao;
@@ -50,7 +45,7 @@ public class ProductActivity extends AppCompatActivity {
         products = productDao.getProducts();
 
         RecyclerView recyclerView
-                = (RecyclerView)findViewById(
+                = (RecyclerView) findViewById(
                 R.id.products);
 
 

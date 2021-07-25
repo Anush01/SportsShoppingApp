@@ -63,7 +63,6 @@ public class MainActivity2 extends AppCompatActivity {
         openurl();
         nav();
         cart();
-
     }
 
     private void cart() {
@@ -206,10 +205,10 @@ public class MainActivity2 extends AppCompatActivity {
 
     private void buildStudentList6() {
         list1ModelArrayList5.add(new List6Model(R.drawable.ss20, "₹599", " mens rain jacket", "₹1299", " 4.4/5"));
-        list1ModelArrayList5.add(new List6Model(R.drawable.shoe1, "230", "good shoe", "789", "4.5/5"));
         list1ModelArrayList5.add(new List6Model(R.drawable.ss9, "599", " trek 150 rain poncho,", "₹999", " 4/5"));
+        list1ModelArrayList5.add(new List6Model(R.drawable.l15, "1300", "Mens Shorts", "1099", "4.5/5")); }
 
-    }
+
 
     private void Slideme() {
         ArrayList<slide_item> sliderDataArrayList = new ArrayList<>();

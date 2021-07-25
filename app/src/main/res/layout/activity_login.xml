@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,20 +10,21 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/tvPhone"
         android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:text="Lets Start With Your"
         android:textColor="#0E0953"
-        android:layout_margin="10dp"
         android:textSize="20dp"
-        android:textStyle="italic"
-        />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/tvPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/etEnter"
-        android:layout_margin="10dp"
+        android:layout_above="@id/idEdtPhoneNumber"
         android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:text="Phone/Email"
@@ -34,29 +33,53 @@
         android:textStyle="italic|bold" />
 
     <EditText
-        android:id="@+id/etEnter"
+        android:id="@+id/idEdtPhoneNumber"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnGet"
-        android:layout_centerInParent="true"
+        android:layout_above="@+id/idBtnGetOtp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginBottom="277dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/rectangle2"
+        android:hint=" Enter phone number/email id"
         android:paddingTop="15dp"
-        android:inputType="number"
-        android:paddingBottom="15dp"
-        android:hint=" Enter phone number/email id" />
+        android:paddingBottom="15dp" />
+
+    <EditText
+        android:id="@+id/idEdtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_above="@id/idBtnVerify"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rectangle2"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:hint="Enter OTP Here"/>
 
     <Button
-        android:id="@+id/btnGet"
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_above="@id/idEdtOtp"
+        android:layout_marginBottom="32dp"
+        android:text="Get OTP"
+        android:background="#36A4DF"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/idBtnVerify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="200dp"
         android:background="#36A4DF"
         android:padding="20dp"
-        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="VERIFY"
         android:textColor="@color/white"
-        android:text="GET OTP" />
+        android:textSize="20sp" />
 
 </RelativeLayout>

@@ -6,25 +6,142 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SportsPage">
-<ImageView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_location_on_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/delivering_to_411001"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/iv1"
+            app:layout_constraintStart_toStartOf="@id/iv1"
+            app:layout_constraintTop_toTopOf="@id/iv1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="change"
+            android:textAllCaps="true"
+            android:textStyle=""
+            app:layout_constraintLeft_toLeftOf="@id/iv1"
+            app:layout_constraintStart_toStartOf="@id/iv1"
+            app:layout_constraintTop_toTopOf="@id/iv1" />
+
+
+        <ImageView
+            android:id="@+id/tv4"
+            android:layout_width="122dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/declogo"
+            android:text="DEcathon "
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editrec"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:hint="search 70 sports 5000 products"
+            android:padding="10dp"
+            app:layout_constraintRight_toLeftOf="@id/iv1"
+            app:layout_constraintStart_toStartOf="@id/iv1"
+            app:layout_constraintTop_toBottomOf="@id/iv1"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/editrec"
+            android:padding="5dp"
+            android:src="@drawable/ic_outline_shopping_cart_24"
+            app:layout_constraintStart_toEndOf="@id/et2"
+            app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+        <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:src="@drawable/s33"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViews"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/s34"
-        />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViews2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </androidx.recyclerview.widget.RecyclerView>
+    app:layout_constraintTop_toBottomOf="@id/et2">
+        <androidx.core.widget.NestedScrollView
+            app:layout_constraintTop_toBottomOf="@id/et2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigatin_view"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/s33" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/s34" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViews2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigatin_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

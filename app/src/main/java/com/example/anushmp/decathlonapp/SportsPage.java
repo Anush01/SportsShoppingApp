@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 
@@ -17,6 +19,7 @@ public class SportsPage extends AppCompatActivity {
     private ArrayList<SportsModel> sportsModelArrayList1 = new ArrayList<>();
     private ArrayList<SportsModel2> sportsModelArrayList=new ArrayList<>();
     private ImageView sp1;
+    private View sfh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,7 @@ public class SportsPage extends AppCompatActivity {
         setRecyclerViews();
         setRecyclerViews2();
         buildStudentList8();
+
     }
     private void buildStudentList7() {
             sportsModelArrayList1.add(new SportsModel(R.drawable.s1));
@@ -81,4 +85,5 @@ public class SportsPage extends AppCompatActivity {
     private void initView1(){
         recyclerViews2=findViewById(R.id.recyclerViews2);
     }
+
 }

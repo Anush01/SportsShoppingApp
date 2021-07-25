@@ -102,7 +102,6 @@
                     android:id="@+id/imageSlider"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_marginTop="10dp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:sliderAnimationDuration="600"
                     app:sliderAutoCycleDirection="back_and_forth"
@@ -120,6 +119,7 @@
                     tools:layout_editor_absoluteX="-9dp" />
 
                 <HorizontalScrollView
+
                     android:id="@+id/horizontalScrollView"
                     android:layout_width="419dp"
                     android:layout_height="114dp"
@@ -177,12 +177,14 @@
                 </HorizontalScrollView>
 
                 <LinearLayout
+                    android:layout_marginTop="20dp"
                     android:id="@+id/relative"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintTop_toBottomOf="@id/horizontalScrollView">
                     <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/recyclerView5">
@@ -196,6 +198,7 @@
                         android:src="@drawable/imgv2"
                         app:layout_constraintTop_toBottomOf="@id/imgv3" />
                     <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/recyclerView2">
@@ -210,6 +213,7 @@
                         app:layout_constraintTop_toBottomOf="@id/imageSlider">
 
                         <LinearLayout
+                            android:layout_marginTop="20dp"
                             android:id="@+id/linear1"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -348,6 +352,7 @@
                         android:text="Cycling"
                         android:textAlignment="textStart" />
                     <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/recyclerView4">
@@ -362,6 +367,7 @@
                         app:layout_constraintTop_toBottomOf="@id/imageSlider">
 
                         <LinearLayout
+                            android:layout_marginTop="20dp"
                             android:id="@+id/linear2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
