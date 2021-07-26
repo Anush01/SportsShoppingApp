@@ -12,6 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Decathlonapp">
+        <activity android:name=".Happy3" />
+        <activity android:name=".Happy2" />
+        <activity android:name=".Happy1" />
+        <activity android:name=".Happy" />
         <activity android:name=".GettingStarted" />
         <activity android:name=".Account_Activity2" />
         <activity android:name=".ProductActivity" />

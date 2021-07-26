@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="200dp"
+    android:elevation="20dp"
+    android:layout_margin="2dp"
     android:layout_height="wrap_content">
+
     <LinearLayout
     android:layout_marginStart="10dp"
     android:layout_marginTop="10dp"
@@ -13,42 +16,47 @@
     <RelativeLayout
         android:gravity="center"
         android:layout_weight="6"
-        android:layout_width="0dp"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <ImageView
             android:id="@+id/ivImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:src="@drawable/pr0"
             android:adjustViewBounds="true"/>
 
         <TextView
+            android:layout_below="@id/ivImg"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:layout_below="@id/ivImg"
-            android:layout_marginStart="5dp"
+            android:layout_margin="20dp"
             android:id="@+id/tvProductName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hocky stick"/>
 
         <TextView
+            android:layout_marginEnd="20dp"
             android:textSize="20sp"
             android:background="#fefe33"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="20dp"
             android:layout_below="@id/tvProductName"
             android:id="@+id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rs. 500"/>
         <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
             android:layout_below="@id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:orientation="horizontal">
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 

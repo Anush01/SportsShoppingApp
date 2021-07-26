@@ -7,23 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.smarteist.autoimageslider.SliderView;
+public class Happy2 extends AppCompatActivity {
+    private Button mbtn7;
 
-import java.util.ArrayList;
-
-public class GettingStarted extends AppCompatActivity {
-        private Button mbtnext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_getting_started);
-        mbtnext=findViewById(R.id.btnnext);
-        mbtnext.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_happy2);
+        mbtn7=findViewById(R.id.mbtn5);
+        mbtn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(GettingStarted.this,Happy.class);
+                Intent intent= new Intent(Happy2.this,Happy3.class);
                 startActivity(intent);
             }
         });
+
     }
 }
