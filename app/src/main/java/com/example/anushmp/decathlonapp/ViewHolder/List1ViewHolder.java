@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.anushmp.decathlonapp.ModelClass.List1Model;
 import com.example.anushmp.decathlonapp.R;
+import com.example.anushmp.decathlonapp.item_listener;
 
 public class List1ViewHolder extends RecyclerView.ViewHolder {
     private ImageView mtvimageView;
@@ -17,7 +18,7 @@ public class List1ViewHolder extends RecyclerView.ViewHolder {
     private TextView mtvMRP;
     private TextView mtvRating;
 
-    public List1ViewHolder(@NonNull View itemView) {
+    public List1ViewHolder(@NonNull View itemView, item_listener itemClickListener) {
         super(itemView);
         initView();
 

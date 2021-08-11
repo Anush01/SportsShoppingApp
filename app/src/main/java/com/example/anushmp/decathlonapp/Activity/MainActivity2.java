@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -25,13 +26,15 @@ import com.example.anushmp.decathlonapp.ModelClass.List3Model;
 import com.example.anushmp.decathlonapp.ModelClass.List4Model;
 import com.example.anushmp.decathlonapp.ModelClass.List5Model;
 import com.example.anushmp.decathlonapp.ModelClass.List6Model;
+import com.example.anushmp.decathlonapp.ModelClass.SportsModel2;
 import com.example.anushmp.decathlonapp.ModelClass.slide_item;
 import com.example.anushmp.decathlonapp.R;
+import com.example.anushmp.decathlonapp.item_listener;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity implements item_listener {
     ImageView runningChallenge;
     ImageView cyclingChallenge;
     ImageView runningEvents;
@@ -308,4 +311,11 @@ public class MainActivity2 extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+
+    @Override
+    public void onItemClicked(int position, List1Model list1Model) {
+        Toast.makeText(getApplicationContext(),"New Arrival",Toast.LENGTH_SHORT).show();
+    }
+
 }
