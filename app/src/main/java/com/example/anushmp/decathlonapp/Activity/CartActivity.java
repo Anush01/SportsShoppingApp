@@ -19,7 +19,6 @@ import com.example.anushmp.decathlonapp.ShoppingDatabase;
 import com.example.anushmp.decathlonapp.ui.login.CartAdapter;
 
 import java.util.List;
-
 public class CartActivity extends AppCompatActivity {
 
     LiveData<List<CartItem>> cartItems;
@@ -37,8 +36,6 @@ public class CartActivity extends AppCompatActivity {
             Intent intent=new Intent(this,MainActivity2.class);
             startActivity(intent);
         });
-
-
         btnProceed.setOnClickListener(v -> startActivity(new Intent(CartActivity.this, CheckoutActivity.class)));
 
         ShoppingDatabase db = ShoppingDatabase.getDatabase(this);
@@ -47,8 +44,6 @@ public class CartActivity extends AppCompatActivity {
         RecyclerView recyclerView
                 = (RecyclerView) findViewById(
                 R.id.products);
-
-
         cartItems.observe(this, cartItems -> {
 
 
@@ -61,7 +56,6 @@ public class CartActivity extends AppCompatActivity {
             for (CartItem item : cartItems) {
                 total = total + item.getPrice();
             }
-
             checkout.setText("Total: \n " + total +" Rs.");
 
             if (total == 0) {
