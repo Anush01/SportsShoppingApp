@@ -15,13 +15,14 @@ import com.example.anushmp.decathlonapp.ViewHolder.List1ViewHolder;
 import java.util.ArrayList;
 
 public class List1Adapter extends RecyclerView.Adapter<List1ViewHolder> {
-     ArrayList<List1Model> list1Models;
+    ArrayList<List1Model> list1Models;
     MainActivity2 mainActivity;
 
     public List1Adapter(ArrayList<List1Model> list1Models, MainActivity2 mainActivity) {
         this.list1Models = list1Models;
         this.mainActivity = mainActivity;
     }
+
     @NonNull
     @Override
     public List1ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -31,7 +32,7 @@ public class List1Adapter extends RecyclerView.Adapter<List1ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull List1ViewHolder holder, int position) {
-        List1Model list1Model=list1Models.get(position);
+        List1Model list1Model = list1Models.get(position);
         holder.setData(list1Model);
     }
 

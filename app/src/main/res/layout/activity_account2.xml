@@ -88,7 +88,7 @@
                 android:layout_toEndOf="@id/ivperson"
                 android:adjustViewBounds="true"
                 android:background="@drawable/square"
-                android:src="@drawable/cart"
+                android:src="@drawable/imgcart"
                 tools:ignore="ContentDescription" />
 
             <Button
@@ -96,7 +96,8 @@
                 android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="100dp"
                 android:layout_marginBottom="100dp"
                 android:background="#297CA3"
                 android:gravity="center"

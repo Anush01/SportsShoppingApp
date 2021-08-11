@@ -4,10 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.CartActivity">
-
-
     <TextView
-
+        android:background="#f0f0f0"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCartName"
+        android:layout_margin="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/your_cart"
+        />
+    <ImageView
+        android:id="@+id/backArrow"
+        android:background="#f0f0f0"
+        android:layout_margin="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backarrow"/>
+    <TextView
+        android:drawableBottom="@drawable/cart"
         android:id="@+id/tvEmpty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,8 +36,22 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:visibility="gone"
-        />
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:background="#f0f0f0"
+        android:drawableStart="@drawable/a10"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:text="100%\nSecure Payment"
+        tools:ignore="UseCompatTextViewDrawableXml" />
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/tvCartName"
         tools:listitem="@layout/product_item"
         android:id="@+id/products"
         android:layout_width="match_parent"
@@ -26,16 +60,33 @@
         tools:ignore="UnknownId" />
 
     <TextView
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:id="@+id/tvCart"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#fefe33"
-        android:gravity="center"
-        android:text="Total: 2323--Checkout"
+        android:background="#f0f0f0"
+        android:padding="5dp"
+        android:text="@string/total_n_2323_rs"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mBtnProceed"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="15dp"
+        android:background="#fefe33"
+        android:drawableEnd="@drawable/rightarrow"
+        android:text="@string/proceed_to_check_out"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

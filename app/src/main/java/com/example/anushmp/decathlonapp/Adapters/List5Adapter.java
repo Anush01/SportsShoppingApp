@@ -15,8 +15,8 @@ import com.example.anushmp.decathlonapp.ViewHolder.List5ViewHolder;
 import java.util.ArrayList;
 
 public class List5Adapter extends RecyclerView.Adapter<List5ViewHolder> {
-     ArrayList<List5Model> list5Models;
-     MainActivity2 mainActivity2;
+    ArrayList<List5Model> list5Models;
+    MainActivity2 mainActivity2;
 
     public List5Adapter(ArrayList<List5Model> list5Models, MainActivity2 mainActivity2) {
         this.list5Models = list5Models;
@@ -25,14 +25,14 @@ public class List5Adapter extends RecyclerView.Adapter<List5ViewHolder> {
 
     @NonNull
     @Override
-    public List5ViewHolder onCreateViewHolder(@NonNull  ViewGroup parent, int viewType) {
+    public List5ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list5, parent, false);
         return new List5ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull  List5ViewHolder holder, int position) {
-        List5Model list5Model=list5Models.get(position);
+    public void onBindViewHolder(@NonNull List5ViewHolder holder, int position) {
+        List5Model list5Model = list5Models.get(position);
         holder.setData(list5Model);
     }
 

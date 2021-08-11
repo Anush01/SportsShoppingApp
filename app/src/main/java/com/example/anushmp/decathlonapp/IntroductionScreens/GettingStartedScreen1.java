@@ -13,7 +13,7 @@ public class GettingStartedScreen1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.GettingStartedScreen1);
+        setContentView(R.layout.gettingstartedscreen1);
         mbtnext=findViewById(R.id.btnnext);
         mbtnext.setOnClickListener(v -> {
             Intent intent= new Intent(GettingStartedScreen1.this, GettingStartedScreen2.class);

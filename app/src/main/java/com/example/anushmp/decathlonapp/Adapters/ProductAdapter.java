@@ -9,14 +9,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.anushmp.decathlonapp.CartItem;
 import com.example.anushmp.decathlonapp.Activity.Productpage;
+import com.example.anushmp.decathlonapp.CartItem;
 import com.example.anushmp.decathlonapp.R;
 import com.example.anushmp.decathlonapp.ShoppingDatabase;
 import com.example.anushmp.decathlonapp.ViewHolder.ProductViewHolder;
 import com.example.anushmp.decathlonapp.data.model.Product;
 
 import org.jetbrains.annotations.NotNull;
+
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
@@ -25,6 +26,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
 
 
     Context context;
+
     public ProductAdapter(List<Product> list, Context context) {
         this.list = list;
         this.context = context;
@@ -59,15 +61,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         if (i.size() != 0)
             isAdded = true;
 
-        holder.setData(currentProduct.getProductName(), currentProduct.getPrice(),isAdded, currentProduct.getImageUrl());
+        holder.setData(currentProduct.getProductName(), currentProduct.getPrice(), isAdded, currentProduct.getImageUrl());
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, Productpage.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra("id",currentProduct.getProductId());
-            intent.putExtra("name",currentProduct.getProductName());
-            intent.putExtra("imageUrl",currentProduct.getImageUrl());
-            intent.putExtra("price",currentProduct.getPrice());
+            intent.putExtra("id", currentProduct.getProductId());
+            intent.putExtra("name", currentProduct.getProductName());
+            intent.putExtra("imageUrl", currentProduct.getImageUrl());
+            intent.putExtra("price", currentProduct.getPrice());
             context.startActivity(intent);
         });
 
@@ -94,10 +96,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
 
     @Override
     public int getItemCount() {
-        if (list!=null)
+        if (list != null)
             return list.size();
         return 0;
     }
+
     @Override
     public void onAttachedToRecyclerView(
             @NotNull RecyclerView recyclerView) {

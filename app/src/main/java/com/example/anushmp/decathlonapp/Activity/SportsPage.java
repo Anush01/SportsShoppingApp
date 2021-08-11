@@ -1,10 +1,11 @@
 package com.example.anushmp.decathlonapp.Activity;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.os.Bundle;
 
 import com.example.anushmp.decathlonapp.Adapters.SportsAdapter;
 import com.example.anushmp.decathlonapp.Adapters.SportsAdapter2;
@@ -18,7 +19,8 @@ public class SportsPage extends AppCompatActivity {
     private RecyclerView recyclerViews;
     private RecyclerView recyclerViews2;
     ArrayList<SportsModel> sportsModelArrayList1 = new ArrayList<>();
-     ArrayList<SportsModel2> sportsModelArrayList=new ArrayList<>();
+    ArrayList<SportsModel2> sportsModelArrayList = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +33,13 @@ public class SportsPage extends AppCompatActivity {
         buildStudentList8();
 
     }
+
     private void buildStudentList7() {
-            sportsModelArrayList1.add(new SportsModel(R.drawable.s1));
-            sportsModelArrayList1.add(new SportsModel(R.drawable.s2));
-            sportsModelArrayList1.add(new SportsModel(R.drawable.s3));
+        sportsModelArrayList1.add(new SportsModel(R.drawable.s1));
+        sportsModelArrayList1.add(new SportsModel(R.drawable.s2));
+        sportsModelArrayList1.add(new SportsModel(R.drawable.s3));
     }
+
     private void buildStudentList8() {
         sportsModelArrayList.add(new SportsModel2(R.drawable.s4));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s5));
@@ -64,23 +68,27 @@ public class SportsPage extends AppCompatActivity {
         sportsModelArrayList.add(new SportsModel2(R.drawable.s31));
         sportsModelArrayList.add(new SportsModel2(R.drawable.s32));
     }
+
     public void setRecyclerViews() {
-        SportsAdapter sportsAdapter=new SportsAdapter(sportsModelArrayList1,this);
-         LinearLayoutManager gridLayoutManager = new LinearLayoutManager(SportsPage.this,LinearLayoutManager.HORIZONTAL,false);
+        SportsAdapter sportsAdapter = new SportsAdapter(sportsModelArrayList1, this);
+        LinearLayoutManager gridLayoutManager = new LinearLayoutManager(SportsPage.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViews.setLayoutManager(gridLayoutManager);
         recyclerViews.setAdapter(sportsAdapter);
     }
+
     public void setRecyclerViews2() {
-        SportsAdapter2 sportsAdapter2=new SportsAdapter2(sportsModelArrayList,this);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(SportsPage.this,2);
+        SportsAdapter2 sportsAdapter2 = new SportsAdapter2(sportsModelArrayList, this);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(SportsPage.this, 2);
         recyclerViews2.setLayoutManager(gridLayoutManager);
         recyclerViews2.setAdapter(sportsAdapter2);
     }
-    private void initView(){
-        recyclerViews=findViewById(R.id.recyclerViews);
+
+    private void initView() {
+        recyclerViews = findViewById(R.id.recyclerViews);
     }
-    private void initView1(){
-        recyclerViews2=findViewById(R.id.recyclerViews2);
+
+    private void initView1() {
+        recyclerViews2 = findViewById(R.id.recyclerViews2);
     }
 
 }

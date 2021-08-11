@@ -15,8 +15,8 @@ import com.example.anushmp.decathlonapp.ViewHolder.List6ViewHolder;
 import java.util.ArrayList;
 
 public class List6Adapter extends RecyclerView.Adapter<List6ViewHolder> {
-     ArrayList<List6Model> list6Models;
-     MainActivity2 mainActivity2;
+    ArrayList<List6Model> list6Models;
+    MainActivity2 mainActivity2;
 
     public List6Adapter(ArrayList<List6Model> list6Models, MainActivity2 mainActivity2) {
         this.list6Models = list6Models;
@@ -31,8 +31,8 @@ public class List6Adapter extends RecyclerView.Adapter<List6ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull  List6ViewHolder holder, int position) {
-        List6Model list6Model=list6Models.get(position);
+    public void onBindViewHolder(@NonNull List6ViewHolder holder, int position) {
+        List6Model list6Model = list6Models.get(position);
         holder.setData(list6Model);
     }
 

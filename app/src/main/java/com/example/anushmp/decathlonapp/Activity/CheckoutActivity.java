@@ -1,10 +1,11 @@
 package com.example.anushmp.decathlonapp.Activity;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.anushmp.decathlonapp.R;
 import com.example.anushmp.decathlonapp.ShoppingDatabase;
@@ -22,7 +23,7 @@ public class CheckoutActivity extends AppCompatActivity {
                 .setTitle("Checkout confirmation")
                 .setMessage("Please confirm the payment.")
                 .setPositiveButton("Done", (dialog, which) -> {
-                    Intent intent = new Intent(CheckoutActivity.this,MainActivity2.class);
+                    Intent intent = new Intent(CheckoutActivity.this, MainActivity2.class);
                     startActivity(intent);
                     ShoppingDatabase db = ShoppingDatabase.getDatabase(getApplicationContext());
                     db.cartDao().deleteAll();

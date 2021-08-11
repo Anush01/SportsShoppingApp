@@ -3,6 +3,7 @@ package com.example.anushmp.decathlonapp;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+
 @Entity
 public class CartItem {
     @PrimaryKey
@@ -21,7 +22,6 @@ public class CartItem {
     public String getImageUrl() {
         return imageUrl;
     }
-
 
 
     public CartItem(int itemId, int price, String productName, String imageUrl) {

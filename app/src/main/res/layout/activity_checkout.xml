@@ -3,17 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
     tools:context=".Activity.CheckoutActivity">
 
-
+    <TextView
+        android:background="#f0f0f0"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCartNames"
+        android:layout_margin="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/your_cart"
+        />
+    <ImageView
+        android:id="@+id/backArrow"
+        android:background="#f0f0f0"
+        android:layout_margin="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backarrow"/>
+    <TextView
+        android:background="#f0f0f0"
+        android:drawableStart="@drawable/a10"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:text="@string/_100_nsecure_payment"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+    <LinearLayout
+        android:layout_below="@+id/tvCartNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
     <EditText
+        android:layout_marginTop="500dp"
         android:layout_margin="10dp"
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:hint="@string/enter_your_name"
         android:inputType="text"
         android:autofillHints="" />
@@ -22,27 +60,20 @@
         android:id="@+id/etPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etName"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:hint="@string/enter_your_phone_number"
         android:inputType="number"
         tools:ignore="TextFields"
         android:autofillHints="" />
     <EditText
         android:layout_margin="10dp"
-        android:layout_below="@+id/etPhone"
         android:id="@+id/etAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:hint="@string/enter_your_address"
         android:inputType="textEmailAddress"
         android:autofillHints="" />
 
     <Button
-        android:layout_below="@id/etAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
@@ -50,5 +81,5 @@
         android:background="#fefe33"
         android:text="@string/checkout"
         />
-
+    </LinearLayout>
 </RelativeLayout>

@@ -32,30 +32,30 @@ import com.smarteist.autoimageslider.SliderView;
 import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
-    ImageView click1;
-    ImageView click2;
-    ImageView c1;
-    ImageView c2;
-    ImageView b2;
-    ImageView b3;
-    ImageView b4;
-    ImageView Box6;
-    View nav;
-    View nav2;
-    Button mbtn1;
+    ImageView runningChallenge;
+    ImageView cyclingChallenge;
+    ImageView runningEvents;
+    ImageView cyclingEvents;
+    ImageView blogPost1;
+    ImageView blogPost2;
+    ImageView blogPost3;
+    ImageView imgProduct;
+    View navIconSports;
+    View navIconAccount;
+    Button goToProductList;
     private RecyclerView recyclerView;
     private RecyclerView recyclerView1;
     private RecyclerView recyclerView2;
     private RecyclerView recyclerView3;
     private RecyclerView recyclerView4;
     private RecyclerView recyclerView5;
-    ImageView iv;
+    ImageView goToCart;
     ArrayList<List1Model> list1ModelArrayList = new ArrayList<>();
-    ArrayList<List2Model> list1ModelArrayList1 = new ArrayList<>();
-    ArrayList<List3Model> list1ModelArrayList2 = new ArrayList<>();
-    ArrayList<List4Model> list1ModelArrayList3 = new ArrayList<>();
-    ArrayList<List5Model> list1ModelArrayList4 = new ArrayList<>();
-    ArrayList<List6Model> list1ModelArrayList5 = new ArrayList<>();
+    ArrayList<List2Model> list2ModelArrayList = new ArrayList<>();
+    ArrayList<List3Model> list3ModelArrayList = new ArrayList<>();
+    ArrayList<List4Model> list4ModelArrayList = new ArrayList<>();
+    ArrayList<List5Model> list5ModelArrayList = new ArrayList<>();
+    ArrayList<List6Model> list6ModelArrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        Slideme();
+        SlideMe();
         initView();
         buildStudentList();
         buildStudentList1();
@@ -84,8 +84,8 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     private void cart() {
-        iv = findViewById(R.id.iv);
-        iv.setOnClickListener(v -> {
+        goToCart = findViewById(R.id.iv);
+        goToCart.setOnClickListener(v -> {
             Intent i5 = new Intent(MainActivity2.this, CartActivity.class);
             startActivity(i5);
 
@@ -94,33 +94,33 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     private void openurl() {
-        click2 = findViewById(R.id.boxa);
-        click1 = findViewById(R.id.box14);
-        c1 = findViewById(R.id.box15);
-        c2 = findViewById(R.id.box16);
-        b2 = findViewById(R.id.boxb);
-        b3 = findViewById(R.id.boxc);
-        b4 = findViewById(R.id.boxd);
-        click1.setOnClickListener(v -> {
+        runningChallenge = findViewById(R.id.boxa);
+        cyclingChallenge = findViewById(R.id.box14);
+        runningEvents = findViewById(R.id.box15);
+        cyclingEvents = findViewById(R.id.box16);
+        blogPost1 = findViewById(R.id.boxb);
+        blogPost2 = findViewById(R.id.boxc);
+        blogPost3 = findViewById(R.id.boxd);
+        runningChallenge.setOnClickListener(v -> {
             String url = "https://www.allforsport.in/event-details/physical-fitness-for-runners-with-patit-mahata-and-puneet-bhattacharya---sportsforall/cd547a5a-e149-11eb-8047-3fccd3bb25c8";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
 
         });
-        c1.setOnClickListener(v -> {
+        cyclingChallenge.setOnClickListener(v -> {
             String url = "https://www.allforsport.in/event-details/30km-cycling-challenge---sportsforall-sfa/676e3478-e52d-11eb-bb9b-1384bf45fe55";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
         });
-        c2.setOnClickListener(v -> {
+        runningEvents.setOnClickListener(v -> {
             String url = "https://www.allforsport.in/event-details/my-journey-of-cycling-across-the-country-for-20,000km-:-bhagyashree---sportsforall/15399dee-e5cf-11eb-9300-6bb44d08881b";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
         });
-        click2.setOnClickListener(v -> {
+        cyclingEvents.setOnClickListener(v -> {
             String url = "https://blog.decathlon.in/";
 
             Intent i = new Intent(Intent.ACTION_VIEW);
@@ -128,21 +128,21 @@ public class MainActivity2 extends AppCompatActivity {
             startActivity(i);
         });
 
-        b2.setOnClickListener(v -> {
+        blogPost1.setOnClickListener(v -> {
             String url = "https://blog.decathlon.in/search?query=How+to+maintain+a+marino+whool+garment%3F";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
         });
 
-        b3.setOnClickListener(v -> {
+        blogPost2.setOnClickListener(v -> {
             String url = "https://blog.decathlon.in/search?query=Top5+monsoon+Accessories+you+need";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
         });
 
-        b4.setOnClickListener(v -> {
+        blogPost3.setOnClickListener(v -> {
             String url = "https://blog.decathlon.in/search?query=Need+Guidance+for+your+sport%3F";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
@@ -166,46 +166,46 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     private void buildStudentList1() {
-        list1ModelArrayList1.add(new List2Model(R.drawable.ss15, "₹1599", "comfort yoga mat,", "₹2000", " 4.5/5"));
-        list1ModelArrayList1.add(new List2Model(R.drawable.ss23, "₹999", " mens footballshoes,", "300", " 4.4/5"));
-        list1ModelArrayList1.add(new List2Model(R.drawable.ss21, "₹1499 ", "hex dumbell 5Kg", "₹2999", " 4.8/5"));
-        list1ModelArrayList1.add(new List2Model(R.drawable.ss22, "₹1999", "camping tent,", "₹2999", " 4.4/5"));
+        list2ModelArrayList.add(new List2Model(R.drawable.ss15, "₹1599", "comfort yoga mat,", "₹2000", " 4.5/5"));
+        list2ModelArrayList.add(new List2Model(R.drawable.ss23, "₹999", " mens footballshoes,", "300", " 4.4/5"));
+        list2ModelArrayList.add(new List2Model(R.drawable.ss21, "₹1499 ", "hex dumbell 5Kg", "₹2999", " 4.8/5"));
+        list2ModelArrayList.add(new List2Model(R.drawable.ss22, "₹1999", "camping tent,", "₹2999", " 4.4/5"));
     }
 
     private void buildStudentList2() {
-        list1ModelArrayList3.add(new List4Model(R.drawable.l01, "₹1399", "Fitness 3kg dumbells", "1599", "4.7/5"));
-        list1ModelArrayList3.add(new List4Model(R.drawable.l02, "₹699", "Resistance Tube", "999", "4.7/5"));
-        list1ModelArrayList3.add(new List4Model(R.drawable.l03, "₹699", "Ankle weight", "1099", "4.6/5"));
-        list1ModelArrayList3.add(new List4Model(R.drawable.l04, "₹1699", "Pilates conmfort mat", "2199", "4.2/5"));
-        list1ModelArrayList3.add(new List4Model(R.drawable.l05, "₹1199", "Gym Ball", "1599", "4/5"));
+        list4ModelArrayList.add(new List4Model(R.drawable.l01, "₹1399", "Fitness 3kg dumbells", "1599", "4.7/5"));
+        list4ModelArrayList.add(new List4Model(R.drawable.l02, "₹699", "Resistance Tube", "999", "4.7/5"));
+        list4ModelArrayList.add(new List4Model(R.drawable.l03, "₹699", "Ankle weight", "1099", "4.6/5"));
+        list4ModelArrayList.add(new List4Model(R.drawable.l04, "₹1699", "Pilates conmfort mat", "2199", "4.2/5"));
+        list4ModelArrayList.add(new List4Model(R.drawable.l05, "₹1199", "Gym Ball", "1599", "4/5"));
 
     }
 
     private void buildStudentList3() {
-        list1ModelArrayList2.add(new List3Model(R.drawable.ss7, "₹999", " soft 140 mesh mens shoes", "₹1299", " 4.6/5"));
-        list1ModelArrayList2.add(new List3Model(R.drawable.ss2, "₹1099", "PW 160 slip walking shoes", "1300", " 4.6/5"));
-        list1ModelArrayList2.add(new List3Model(R.drawable.ss6, "₹1099", " HW 100 MENS active shoes", "₹1999", " 4.4/5"));
-        list1ModelArrayList2.add(new List3Model(R.drawable.ss3, "₹1099", "soft 180strap walking shoes", "₹2099", " 4.5/5"));
-        list1ModelArrayList2.add(new List3Model(R.drawable.ss4, "₹1099", "  PW 500 fresh women fitness shoes", "₹1999", "4.8/5"));
-        list1ModelArrayList2.add(new List3Model(R.drawable.ss5, "₹1099", "slip on women fitness shoes", "1009", " 4.6/5"));
+        list3ModelArrayList.add(new List3Model(R.drawable.ss7, "₹999", " soft 140 mesh mens shoes", "₹1299", " 4.6/5"));
+        list3ModelArrayList.add(new List3Model(R.drawable.ss2, "₹1099", "PW 160 slip walking shoes", "1300", " 4.6/5"));
+        list3ModelArrayList.add(new List3Model(R.drawable.ss6, "₹1099", " HW 100 MENS active shoes", "₹1999", " 4.4/5"));
+        list3ModelArrayList.add(new List3Model(R.drawable.ss3, "₹1099", "soft 180strap walking shoes", "₹2099", " 4.5/5"));
+        list3ModelArrayList.add(new List3Model(R.drawable.ss4, "₹1099", "  PW 500 fresh women fitness shoes", "₹1999", "4.8/5"));
+        list3ModelArrayList.add(new List3Model(R.drawable.ss5, "₹1099", "slip on women fitness shoes", "1009", " 4.6/5"));
     }
 
     private void buildStudentList4() {
-        list1ModelArrayList4.add(new List5Model(R.drawable.l12, "999", "machine", "1300", "4.5/5"));
-        list1ModelArrayList4.add(new List5Model(R.drawable.l11, "1100", "Tshirt", "1500", "4.5/5"));
-        list1ModelArrayList4.add(new List5Model(R.drawable.l13, "1300", "Flexible Pant", "2000", "4.5/5"));
-        list1ModelArrayList4.add(new List5Model(R.drawable.l14, "999", "Crop Top", "1999", "4.5/5"));
-        list1ModelArrayList4.add(new List5Model(R.drawable.l15, "1300", "Mens Shorts", "1099", "4.5/5"));
+        list5ModelArrayList.add(new List5Model(R.drawable.l12, "999", "machine", "1300", "4.5/5"));
+        list5ModelArrayList.add(new List5Model(R.drawable.l11, "1100", "Tshirt", "1500", "4.5/5"));
+        list5ModelArrayList.add(new List5Model(R.drawable.l13, "1300", "Flexible Pant", "2000", "4.5/5"));
+        list5ModelArrayList.add(new List5Model(R.drawable.l14, "999", "Crop Top", "1999", "4.5/5"));
+        list5ModelArrayList.add(new List5Model(R.drawable.l15, "1300", "Mens Shorts", "1099", "4.5/5"));
     }
 
     private void buildStudentList6() {
-        list1ModelArrayList5.add(new List6Model(R.drawable.ss20, "₹599", " mens rain jacket", "₹1299", " 4.4/5"));
-        list1ModelArrayList5.add(new List6Model(R.drawable.ss9, "599", " trek 150 rain poncho,", "₹999", " 4/5"));
-        list1ModelArrayList5.add(new List6Model(R.drawable.l15, "1300", "Mens Shorts", "1099", "4.5/5"));
+        list6ModelArrayList.add(new List6Model(R.drawable.ss20, "₹599", " mens rain jacket", "₹1299", " 4.4/5"));
+        list6ModelArrayList.add(new List6Model(R.drawable.ss9, "₹599", " trek 150 rain poncho,", "₹999", " 4/5"));
+        list6ModelArrayList.add(new List6Model(R.drawable.l15, "₹1300", "Mens Shorts", "1099", "4.5/5"));
     }
 
 
-    private void Slideme() {
+    private void SlideMe() {
         ArrayList<slide_item> sliderDataArrayList = new ArrayList<>();
         SliderView sliderView = findViewById(R.id.imageSlider);
         sliderDataArrayList.add(new slide_item("https://www.linkpicture.com/q/ig1.png"));
@@ -242,7 +242,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void setRecyclerView3() {
-        List2Adapter list2Adapter = new List2Adapter(list1ModelArrayList1, this);
+        List2Adapter list2Adapter = new List2Adapter(list2ModelArrayList, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity2.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView1.setLayoutManager(linearLayoutManager);
         recyclerView1.setAdapter(list2Adapter);
@@ -250,7 +250,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void setRecyclerView4() {
-        List3Adapter list3Adapter = new List3Adapter(list1ModelArrayList2, this);
+        List3Adapter list3Adapter = new List3Adapter(list3ModelArrayList, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity2.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView2.setLayoutManager(linearLayoutManager);
         recyclerView2.setAdapter(list3Adapter);
@@ -258,7 +258,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void setRecyclerView5() {
-        List4Adapter list4Adapter = new List4Adapter(list1ModelArrayList3, this);
+        List4Adapter list4Adapter = new List4Adapter(list4ModelArrayList, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity2.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView3.setLayoutManager(linearLayoutManager);
         recyclerView3.setAdapter(list4Adapter);
@@ -266,7 +266,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void setRecyclerView6() {
-        List5Adapter list5Adapter = new List5Adapter(list1ModelArrayList4, this);
+        List5Adapter list5Adapter = new List5Adapter(list5ModelArrayList, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity2.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView4.setLayoutManager(linearLayoutManager);
         recyclerView4.setAdapter(list5Adapter);
@@ -274,7 +274,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void setRecyclerView2() {
-        List6Adapter list6Adapter = new List6Adapter(list1ModelArrayList5, this);
+        List6Adapter list6Adapter = new List6Adapter(list6ModelArrayList, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity2.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView5.setLayoutManager(linearLayoutManager);
         recyclerView5.setAdapter(list6Adapter);
@@ -283,28 +283,27 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void openProduct() {
-        Box6 = findViewById(R.id.box6);
-        Box6.setOnClickListener(v -> {
+        imgProduct = findViewById(R.id.box6);
+        imgProduct.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity2.this, ProductActivity.class);
             startActivity(intent);
         });
-        mbtn1 = findViewById(R.id.btn1);
-        mbtn1.setOnClickListener(v -> {
+        goToProductList = findViewById(R.id.btn1);
+        goToProductList.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity2.this, ProductActivity.class);
             startActivity(intent);
         });
 
     }
 
-
     private void nav() {
-        nav = findViewById(R.id.sports);
-        nav.setOnClickListener(v -> {
+        navIconSports = findViewById(R.id.sports);
+        navIconSports.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity2.this, SportsPage.class);
             startActivity(intent);
         });
-        nav2 = findViewById(R.id.account);
-        nav2.setOnClickListener(v -> {
+        navIconAccount = findViewById(R.id.account);
+        navIconAccount.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity2.this, Account_Activity2.class);
             startActivity(intent);
         });

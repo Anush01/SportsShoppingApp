@@ -1,14 +1,14 @@
 package com.example.anushmp.decathlonapp.Activity;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.anushmp.decathlonapp.CartItem;
 import com.example.anushmp.decathlonapp.R;
@@ -26,10 +26,10 @@ public class Productpage extends AppCompatActivity {
         Intent i = getIntent();
         ShoppingDatabase db = ShoppingDatabase.getDatabase(this);
 
-        int id = i.getIntExtra("id",1);
+        int id = i.getIntExtra("id", 1);
         String name = i.getStringExtra("name");
         String imageUrl = i.getStringExtra("imageUrl");
-        int price = i.getIntExtra("price",0);
+        int price = i.getIntExtra("price", 0);
 
         ImageView ivImage = findViewById(R.id.ivImage);
         TextView tvName = findViewById(R.id.tvName);
@@ -39,8 +39,8 @@ public class Productpage extends AppCompatActivity {
 
         Picasso.get().load(imageUrl).into(ivImage);
         tvName.setText(name);
-        tvPrice.setText("₹ "+price);
-        tvId.setText("ID: "+id);
+        tvPrice.setText("₹ " + price);
+        tvId.setText("ID: " + id);
 
         btnAddToBag.setOnClickListener(v -> {
             CartItem item = new CartItem(id, price, name, imageUrl);

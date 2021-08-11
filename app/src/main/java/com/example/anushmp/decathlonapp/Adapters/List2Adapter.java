@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class List2Adapter extends RecyclerView.Adapter<List2ViewHolder> {
     ArrayList<List2Model> list2Models;
-     MainActivity2 mainActivity2;
+    MainActivity2 mainActivity2;
 
     public List2Adapter(ArrayList<List2Model> list2Models, MainActivity2 mainActivity2) {
         this.list2Models = list2Models;
@@ -32,8 +32,8 @@ public class List2Adapter extends RecyclerView.Adapter<List2ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull  List2ViewHolder holder, int position) {
-        List2Model list2Model=list2Models.get(position);
+    public void onBindViewHolder(@NonNull List2ViewHolder holder, int position) {
+        List2Model list2Model = list2Models.get(position);
         holder.setData(list2Model);
     }
 

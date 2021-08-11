@@ -1,10 +1,11 @@
 package com.example.anushmp.decathlonapp.Activity;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.os.Bundle;
 
 import com.example.anushmp.decathlonapp.Adapters.ProductAdapter;
 import com.example.anushmp.decathlonapp.R;
@@ -48,9 +49,9 @@ public class ProductActivity extends AppCompatActivity {
 
 
         products.observe(this, products -> {
-            ProductAdapter adapter = new ProductAdapter(products,getApplicationContext());
+            ProductAdapter adapter = new ProductAdapter(products, getApplicationContext());
             recyclerView.setAdapter(adapter);
-            recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+            recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
         });
 
 

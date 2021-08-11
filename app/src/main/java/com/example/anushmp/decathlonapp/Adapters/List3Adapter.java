@@ -23,14 +23,14 @@ public class List3Adapter extends RecyclerView.Adapter<List3ViewHolder> {
 
     @NonNull
     @Override
-    public List3ViewHolder onCreateViewHolder(@NonNull  ViewGroup parent, int viewType) {
+    public List3ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list3, parent, false);
         return new List3ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull  List3ViewHolder holder, int position) {
-        List3Model list3Model=list3Models.get(position);
+    public void onBindViewHolder(@NonNull List3ViewHolder holder, int position) {
+        List3Model list3Model = list3Models.get(position);
         holder.setData(list3Model);
     }
 

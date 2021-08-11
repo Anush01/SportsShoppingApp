@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.example.anushmp.decathlonapp.R;
 import com.example.anushmp.decathlonapp.ModelClass.slide_item;
+import com.example.anushmp.decathlonapp.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
 
 public class SlideAdapter extends SliderViewAdapter<SlideAdapter.SliderAdapterViewHolder> {
 
-     Context context;
+    Context context;
     // list for storing urls of images.
     private final List<slide_item> mSliderItems;
 

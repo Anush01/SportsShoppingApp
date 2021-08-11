@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
+import com.example.anushmp.decathlonapp.IntroductionScreens.GettingStartedScreen1;
 import com.example.anushmp.decathlonapp.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                                       @Override
                                       public void run() {
                                           Intent i=new Intent(MainActivity.this,
-                                                  GettingStarted.class);
+                                                  MainActivity2.class);
                                           //Intent is used to switch from one activity to another.
 
                                           startActivity(i);

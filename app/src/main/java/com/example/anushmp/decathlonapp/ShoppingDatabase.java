@@ -14,7 +14,9 @@ import com.example.anushmp.decathlonapp.ui.login.ProductDao;
 public abstract class ShoppingDatabase extends RoomDatabase {
 
     public abstract CartDao cartDao();
+
     public abstract ProductDao productDao();
+
     private static volatile ShoppingDatabase INSTANCE;
 
     public static ShoppingDatabase getDatabase(final Context context) {

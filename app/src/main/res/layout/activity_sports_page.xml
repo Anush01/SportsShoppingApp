@@ -20,7 +20,8 @@
             android:src="@drawable/ic_baseline_location_on_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
-            android:text="change"
+            android:text="@string/change"
             android:textAllCaps="true"
             android:textStyle=""
             app:layout_constraintLeft_toLeftOf="@id/iv1"
@@ -54,10 +55,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/declogo"
-            android:text="DEcathon "
+            android:text="@string/decathlon"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="ContentDescription,MissingConstraints" />
 
         <EditText
             android:id="@+id/et2"
@@ -66,13 +67,14 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/editrec"
             android:drawableStart="@drawable/ic_baseline_search_24"
-            android:hint="search 70 sports 5000 products"
+            android:hint="@string/search_70_sports_5000_products"
             android:padding="10dp"
             app:layout_constraintRight_toLeftOf="@id/iv1"
             app:layout_constraintStart_toStartOf="@id/iv1"
             app:layout_constraintTop_toBottomOf="@id/iv1"
             tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="62dp" />
+            tools:layout_editor_absoluteY="62dp"
+            tools:ignore="Autofill,TextFields" />
 
         <ImageView
             android:id="@+id/iv"
@@ -84,7 +86,8 @@
             android:padding="5dp"
             android:src="@drawable/ic_outline_shopping_cart_24"
             app:layout_constraintStart_toEndOf="@id/et2"
-            app:layout_constraintTop_toBottomOf="@id/tv4" />
+            app:layout_constraintTop_toBottomOf="@id/tv4"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
     android:layout_width="match_parent"
@@ -109,7 +112,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/s33" />
+                    android:src="@drawable/s33"
+                    tools:ignore="ContentDescription" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViews"
@@ -120,7 +124,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/s34" />
+                    android:src="@drawable/s34"
+                    tools:ignore="ContentDescription" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViews2"
