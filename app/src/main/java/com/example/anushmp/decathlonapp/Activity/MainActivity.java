@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                                       @Override
                                       public void run() {
                                           Intent i=new Intent(MainActivity.this,
-                                                  Login_Activity.class);
+                                                  GettingStarted.class);
                                           //Intent is used to switch from one activity to another.
 
                                           startActivity(i);
