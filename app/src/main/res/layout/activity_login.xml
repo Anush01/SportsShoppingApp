@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -13,9 +14,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Lets Start With Your"
+        android:text="@string/lets_start_with_your"
         android:textColor="#0E0953"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="italic" />
 
     <TextView
@@ -27,9 +28,9 @@
         android:layout_margin="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Phone/Email"
+        android:text="@string/phone_email"
         android:textColor="#0E0953"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="italic|bold" />
 
     <EditText
@@ -41,9 +42,12 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rectangle2"
-        android:hint=" Enter phone number/email id"
+        android:hint="@string/enter_phone_number_email_id"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp" />
+        android:paddingBottom="15dp"
+        android:autofillHints=""
+        android:inputType="number"
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/idEdtOtp"
@@ -54,7 +58,7 @@
         android:background="@drawable/rectangle2"
         android:layout_margin="20dp"
         android:textAlignment="center"
-        android:hint="Enter OTP Here"/>
+        android:hint="@string/enter_otp_here"/>
 
     <Button
         android:id="@+id/idBtnGetOtp"
@@ -62,7 +66,7 @@
         android:layout_height="66dp"
         android:layout_above="@id/idEdtOtp"
         android:layout_marginBottom="32dp"
-        android:text="Get OTP"
+        android:text="@string/get_otp"
         android:background="#36A4DF"
         android:textSize="20sp"
         android:layout_margin="20dp"

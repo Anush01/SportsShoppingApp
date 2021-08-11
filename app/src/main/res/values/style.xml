@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="scroll">
-        <item name="background">@drawable/square</item>
+        <item name="android:background">@drawable/square</item>
         <item name="android:layout_width">111dp</item>
         <item name="android:layout_height">99dp</item>
         <item name="android:layout_margin">10dp</item>

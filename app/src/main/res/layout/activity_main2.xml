@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity2"
+    tools:context=".Activity.MainActivity2"
     android:background="#f8f8ff">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,7 +19,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
-            android:text="change"
+            android:text="@string/change"
             android:textAllCaps="true"
             app:layout_constraintLeft_toLeftOf="@id/iv1"
             app:layout_constraintStart_toStartOf="@id/iv1"
@@ -53,16 +54,17 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/declogo"
-            android:text="DEcathon "
+            android:text="@string/decathlon"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="ContentDescription,MissingConstraints" />
 
         <EditText
             android:id="@+id/et1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintStart_toStartOf="@id/iv1"
             app:layout_constraintRight_toLeftOf="@id/iv1"
             app:layout_constraintTop_toBottomOf="@id/iv1"
@@ -70,9 +72,10 @@
             tools:layout_editor_absoluteY="62dp"
             android:background="@drawable/editrec"
             android:drawableStart="@drawable/ic_baseline_search_24"
-            android:hint="search 70 sports 5000 products"
+            android:hint="@string/search_70_sports_5000_products"
             android:padding="10dp"
-            />
+            android:importantForAutofill="no"
+            android:inputType="text" />
 
         <ImageView
             android:id="@+id/iv"
@@ -84,7 +87,8 @@
             android:padding="5dp"
             android:src="@drawable/ic_outline_shopping_cart_24"
             app:layout_constraintStart_toEndOf="@id/et1"
-            app:layout_constraintTop_toBottomOf="@id/tv4" />
+            app:layout_constraintTop_toBottomOf="@id/tv4"
+            android:contentDescription="@string/todo" />
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="410dp"
@@ -124,24 +128,26 @@
                     android:layout_width="419dp"
                     android:layout_height="114dp"
                     android:layout_margin="10dp"
-                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
                     android:scrollbars="none"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/imageSlider">
+                    app:layout_constraintTop_toBottomOf="@id/imageSlider"
+                    tools:ignore="RtlSymmetry">
 
                     <LinearLayout
                         android:id="@+id/linear"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:paddingLeft="15dp">
+                        android:paddingStart="15dp"
+                        tools:ignore="RtlSymmetry">
 
                         <Button
                             android:id="@+id/box1"
                             style="@style/scroll"
                             android:background="@drawable/square"
                             android:drawableTop="@drawable/a10"
-                            android:text="Minimum 2 rears warrenty"
+                            android:text="@string/minimum_2_rears_warrenty"
                             android:textAlignment="center"
                             android:textAllCaps="false" />
 
@@ -150,7 +156,7 @@
                             style="@style/scroll"
                             android:background="@drawable/square"
                             android:drawableTop="@drawable/a9"
-                            android:text="Drive Through/Free Pickup Service "
+                            android:text="@string/drive_through_free_pickup_service"
                             android:textAlignment="center"
                             android:textAllCaps="false" />
 
@@ -160,7 +166,7 @@
                             android:layout_margin="7dp"
                             android:background="@drawable/square"
                             android:drawableTop="@drawable/a7"
-                            android:text="Safe Delivery At Your Doorstep"
+                            android:text="@string/safe_delivery_at_your_doorstep"
                             android:textAlignment="center"
                             android:textAllCaps="false" />
 
@@ -170,7 +176,7 @@
                             android:layout_margin="12dp"
                             android:background="@drawable/square"
                             android:drawableTop="@drawable/a8"
-                            android:text="Easy 90 Days Resturns"
+                            android:text="@string/easy_90_days_returns"
                             android:textAlignment="center"
                             android:textAllCaps="false" />
                     </LinearLayout>
@@ -196,7 +202,8 @@
                         android:layout_marginTop="20dp"
                         android:adjustViewBounds="true"
                         android:src="@drawable/imgv2"
-                        app:layout_constraintTop_toBottomOf="@id/imgv3" />
+                        app:layout_constraintTop_toBottomOf="@id/imgv3"
+                        tools:ignore="ContentDescription" />
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
@@ -227,7 +234,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr0"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/box7"
@@ -235,7 +243,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr1"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/box8"
@@ -243,7 +252,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr2"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
 
                             <ImageView
                                 android:layout_margin="10dp"
@@ -252,7 +262,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr3"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </HorizontalScrollView>
                     <androidx.recyclerview.widget.RecyclerView
@@ -283,7 +294,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr4"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/box11"
@@ -291,7 +303,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr5"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/box12"
@@ -299,7 +312,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr6"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
 
                             <ImageView
                                 android:layout_margin="10dp"
@@ -308,7 +322,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr7"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </HorizontalScrollView>
                     <androidx.recyclerview.widget.RecyclerView
@@ -322,7 +337,7 @@
                         android:background="@drawable/rectangle1"
                         android:drawableStart="@drawable/asset1"
                         android:drawableEnd="@drawable/ic_baseline_add_24"
-                        android:text="Running &amp; Walking "
+                        android:text="@string/running_amp_walking"
                         android:textAlignment="textStart" />
 
                     <Button
@@ -332,7 +347,8 @@
                         android:drawableStart="@drawable/a2"
                         android:drawableEnd="@drawable/ic_baseline_add_24"
                         android:text="Fitness Cardio"
-                        android:textAlignment="textStart" />
+                        android:textAlignment="textStart"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         android:id="@+id/btn3"
@@ -341,7 +357,8 @@
                         android:drawableStart="@drawable/a3"
                         android:drawableEnd="@drawable/ic_baseline_add_24"
                         android:text="Tennis"
-                        android:textAlignment="textStart" />
+                        android:textAlignment="textStart"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         android:id="@+id/btn4"
@@ -349,7 +366,7 @@
                         android:background="@drawable/rectangle1"
                         android:drawableStart="@drawable/a4"
                         android:drawableEnd="@drawable/ic_baseline_add_24"
-                        android:text="Cycling"
+                        android:text="@string/cycling"
                         android:textAlignment="textStart" />
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_marginTop="20dp"
@@ -381,7 +398,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr8"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/box15"
@@ -389,7 +407,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr9"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/box16"
@@ -397,7 +416,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr10"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
 
                             <ImageView
                                 android:layout_margin="10dp"
@@ -406,7 +426,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr11"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </HorizontalScrollView>
 
@@ -417,7 +438,8 @@
                         android:layout_height="242dp"
                         android:layout_marginTop="20dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/imgv" />
+                        android:src="@drawable/imgv"
+                        tools:ignore="ContentDescription" />
                     <HorizontalScrollView
                         android:id="@+id/horizontalScrollView5"
                         android:layout_width="419dp"
@@ -441,7 +463,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr12"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/boxb"
@@ -449,7 +472,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr13"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/boxc"
@@ -457,7 +481,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr14"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
 
                             <ImageView
                                 android:layout_margin="10dp"
@@ -466,7 +491,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr15"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </HorizontalScrollView>
                     <androidx.recyclerview.widget.RecyclerView
@@ -497,7 +523,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr16"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/boxf"
@@ -505,7 +532,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr17"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                             <ImageView
                                 android:layout_margin="10dp"
                                 android:id="@+id/boxg"
@@ -513,7 +541,8 @@
                                 android:layout_width="wrap_content"
                                 android:background="@drawable/pr18"
                                 android:textAlignment="center"
-                                android:textAllCaps="false" />
+                                android:textAllCaps="false"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>

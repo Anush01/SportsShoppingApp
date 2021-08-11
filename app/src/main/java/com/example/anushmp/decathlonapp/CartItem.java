@@ -13,18 +13,16 @@ public class CartItem {
     private int price;
 
     @ColumnInfo(name = "productName")
-    private String productName;
+    String productName;
 
     @ColumnInfo(name = "imageUrl")
-    private String imageUrl;
+    String imageUrl;
 
     public String getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
+
 
     public CartItem(int itemId, int price, String productName, String imageUrl) {
         this.itemId = itemId;
@@ -53,7 +51,5 @@ public class CartItem {
         return productName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
+
 }

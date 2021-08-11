@@ -10,19 +10,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.anushmp.decathlonapp.CartItem;
-import com.example.anushmp.decathlonapp.ProductViewHolder;
+import com.example.anushmp.decathlonapp.ViewHolder.ProductViewHolder;
 import com.example.anushmp.decathlonapp.R;
 import com.example.anushmp.decathlonapp.ShoppingDatabase;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Collections;
 import java.util.List;
 
 public class CartAdapter extends RecyclerView.Adapter<ProductViewHolder> {
 
-    List<CartItem> list
-            = Collections.emptyList();
+    List<CartItem> list;
 
     Context context;
     //ClickListiner listiner;
@@ -40,19 +38,13 @@ public class CartAdapter extends RecyclerView.Adapter<ProductViewHolder> {
 
         // Inflate the layout
 
-        View productView
-                = inflater
-                .inflate(R.layout.product_item,
-                        parent, false);
+        View productView = inflater.inflate(R.layout.product_item, parent, false);
 
-        ProductViewHolder viewHolder
-                = new ProductViewHolder(productView);
-        return viewHolder;
+        return new ProductViewHolder(productView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull ProductViewHolder holder, int position) {
-        boolean isAdded = false;
 
         ShoppingDatabase db = ShoppingDatabase.getDatabase(context);
         CartItem currentItem = list.get(position);
@@ -62,16 +54,13 @@ public class CartAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         holder.setData(currentItem.getProductName(), currentItem.getPrice(), true,currentItem.getImageUrl());
         holder.remove.setVisibility(View.VISIBLE);
 
-        holder.remove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        holder.remove.setOnClickListener(v -> {
 
 
-                List<CartItem> item = db.cartDao().searchItemInCart(currentItem.getItemId());
+            List<CartItem> item = db.cartDao().searchItemInCart(currentItem.getItemId());
 
-                if (item.size() != 0)
-                    db.cartDao().delete(item.get(0));
-            }
+            if (item.size() != 0)
+                db.cartDao().delete(item.get(0));
         });
     }
 

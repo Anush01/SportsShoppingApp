@@ -1,0 +1,14 @@
+package com.example.anushmp.decathlonapp.ModelClass;
+
+public class SportsModel2 {
+     int imageView2;
+
+
+    public SportsModel2(int imageView) {
+        this.imageView2 = imageView;
+    }
+
+    public int getImageView1() {
+        return imageView2;
+    }
+}

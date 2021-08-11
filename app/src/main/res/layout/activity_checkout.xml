@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckoutActivity">
+    tools:context=".Activity.CheckoutActivity">
 
 
     <EditText
@@ -15,7 +14,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:hint="Enter your name"/>
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:autofillHints="" />
     <EditText
         android:layout_margin="10dp"
         android:id="@+id/etPhone"
@@ -24,7 +25,10 @@
         android:layout_below="@+id/etName"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:hint="Enter your phone number"/>
+        android:hint="@string/enter_your_phone_number"
+        android:inputType="number"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
     <EditText
         android:layout_margin="10dp"
         android:layout_below="@+id/etPhone"
@@ -33,7 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:hint="Enter your address"/>
+        android:hint="@string/enter_your_address"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
 
     <Button
         android:layout_below="@id/etAddress"
@@ -42,7 +48,7 @@
         android:layout_margin="30dp"
         android:id="@+id/btnCheckout"
         android:background="#fefe33"
-        android:text="CheckOut"
+        android:text="@string/checkout"
         />
 
 </RelativeLayout>

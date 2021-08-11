@@ -12,21 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Decathlonapp">
-        <activity android:name=".Happy3" />
-        <activity android:name=".Happy2" />
-        <activity android:name=".Happy1" />
-        <activity android:name=".Happy" />
-        <activity android:name=".GettingStarted" />
-        <activity android:name=".Account_Activity2" />
-        <activity android:name=".ProductActivity" />
-        <activity android:name=".CartActivity" />
-        <activity android:name=".CheckoutActivity" />
-        <activity android:name=".Login_Activity" />
-        <activity android:name=".AccountActivity" />
-        <activity android:name=".SportsPage" />
-        <activity android:name=".Productpage" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".IntroductionScreens.GettingStartedScreen5" />
+        <activity android:name=".IntroductionScreens.GettingStartedScreen4" />
+        <activity android:name=".IntroductionScreens.GettingStartedScreen3" />
+        <activity android:name=".IntroductionScreens.GettingStartedScreen2" />
+        <activity android:name=".IntroductionScreens.GettingStartedScreen1" />
+        <activity android:name=".Activity.Account_Activity2" />
+        <activity android:name=".Activity.ProductActivity" />
+        <activity android:name=".Activity.CartActivity" />
+        <activity android:name=".Activity.CheckoutActivity" />
+        <activity android:name=".Activity.Login_Activity" />
+        <activity android:name=".Activity.AccountActivity" />
+        <activity android:name=".Activity.SportsPage" />
+        <activity android:name=".Activity.Productpage" />
+        <activity android:name=".Activity.MainActivity2" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

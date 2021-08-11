@@ -1,33 +1,23 @@
 package com.example.anushmp.decathlonapp.ui.login;
 
-import androidx.lifecycle.LiveData;
+import android.util.Patterns;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import android.util.Patterns;
-
+import com.example.anushmp.decathlonapp.R;
 import com.example.anushmp.decathlonapp.data.LoginRepository;
 import com.example.anushmp.decathlonapp.data.Result;
 import com.example.anushmp.decathlonapp.data.model.LoggedInUser;
-import com.example.anushmp.decathlonapp.R;
 
 public class LoginViewModel extends ViewModel {
 
-    private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
-    private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
-    private LoginRepository loginRepository;
+    MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
+    MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
+    LoginRepository loginRepository;
 
-    LoginViewModel(LoginRepository loginRepository) {
-        this.loginRepository = loginRepository;
-    }
+   
 
-    LiveData<LoginFormState> getLoginFormState() {
-        return loginFormState;
-    }
-
-    LiveData<LoginResult> getLoginResult() {
-        return loginResult;
-    }
+  
 
     public void login(String username, String password) {
         // can be launched in a separate asynchronous job

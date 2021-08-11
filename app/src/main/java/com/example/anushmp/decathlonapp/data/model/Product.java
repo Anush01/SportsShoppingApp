@@ -24,10 +24,6 @@ public class Product {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
     public int getProductId() {
         return productId;
     }
@@ -48,9 +44,6 @@ public class Product {
         return productName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
 
     public Product(int productId, int price, String productName, String imageUrl) {
         this.productId = productId;

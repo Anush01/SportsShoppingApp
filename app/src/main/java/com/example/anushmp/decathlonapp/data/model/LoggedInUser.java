@@ -5,8 +5,8 @@ package com.example.anushmp.decathlonapp.data.model;
  */
 public class LoggedInUser {
 
-    private String userId;
-    private String displayName;
+    String userId;
+     String displayName;
 
     public LoggedInUser(String userId, String displayName) {
         this.userId = userId;
