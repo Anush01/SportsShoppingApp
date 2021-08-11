@@ -1,6 +1,8 @@
 package com.example.anushmp.decathlonapp.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -18,6 +20,8 @@ import java.util.ArrayList;
 public class SportsPage extends AppCompatActivity {
     private RecyclerView recyclerViews;
     private RecyclerView recyclerViews2;
+    View navIconSports;
+    View navIconAccount;
     ArrayList<SportsModel> sportsModelArrayList1 = new ArrayList<>();
     ArrayList<SportsModel2> sportsModelArrayList = new ArrayList<>();
 
@@ -27,6 +31,7 @@ public class SportsPage extends AppCompatActivity {
         setContentView(R.layout.activity_sports_page);
         initView();
         initView1();
+        nav();
         buildStudentList7();
         setRecyclerViews();
         setRecyclerViews2();
@@ -90,5 +95,16 @@ public class SportsPage extends AppCompatActivity {
     private void initView1() {
         recyclerViews2 = findViewById(R.id.recyclerViews2);
     }
-
+    private void nav() {
+        navIconSports = findViewById(R.id.homeFragment);
+        navIconSports.setOnClickListener(v -> {
+            Intent intent = new Intent(SportsPage.this, MainActivity2.class);
+            startActivity(intent);
+        });
+        navIconAccount = findViewById(R.id.account);
+        navIconAccount.setOnClickListener(v -> {
+            Intent intent = new Intent(SportsPage.this, Account_Activity2.class);
+            startActivity(intent);
+        });
+    }
 }

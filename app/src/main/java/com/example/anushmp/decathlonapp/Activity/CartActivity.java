@@ -65,6 +65,7 @@ public class CartActivity extends AppCompatActivity {
             checkout.setText("Total: \n " + total +" Rs.");
 
             if (total == 0) {
+                btnProceed.setVisibility(View.GONE);
                 empty.setVisibility(View.VISIBLE);
                 recyclerView.setVisibility(View.GONE);
                 checkout.setVisibility(View.GONE);
