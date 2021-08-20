@@ -48,7 +48,10 @@ Decathlon is your one stop shop for buying sports goods online in India.It is B2
     //Image Slideer
     implementation 'com.github.smarteist:autoimageslider:1.4.0-appcompat'
     implementation 'com.github.smarteist:autoimageslider:1.4.0'
-   
+# Links
+
+https://medium.com/@prachip293/decathlon-app-b8872de83d3a
+
 # Lesson Learned
     
 * Learned how to read and resolve the errors
