@@ -43,5 +43,5 @@ Decathlon is your one stop shop for buying sports goods online in India.It is B2
 * Learned how to read and resolve the errors
 * Got introduced to many new things like local database and firebase
 * Learned about Authentication
-* Learned how to apply the thingd which we have learned into bulding the app
+* Learned how to apply the things which we have learned into bulding the app
  
