@@ -18,6 +18,7 @@
             android:layout_height="match_parent"
             android:background="#f2f3f4">
             <ImageView
+                android:id="@+id/ivCart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_outline_shopping_cart_24"
@@ -27,6 +28,7 @@
                 tools:ignore="ContentDescription" />
 
             <ImageView
+
                 android:layout_margin="20dp"
                 android:padding="20dp"
                 android:id="@+id/ivperson"
@@ -61,7 +63,7 @@
                 tools:layout_editor_absoluteY="81dp" />
             <ImageView
                 android:adjustViewBounds="true"
-                android:id="@+id/ivprofile"
+                android:id="@+id/ivProfile"
                 android:layout_below="@id/ivperson"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,7 +73,8 @@
                 tools:ignore="ContentDescription" />
             <ImageView
                 android:adjustViewBounds="true"
-                android:layout_below="@id/ivprofile"
+                android:id="@+id/ivAddress"
+                android:layout_below="@id/ivProfile"
                 android:layout_margin="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,6 +83,7 @@
                 tools:ignore="ContentDescription" />
 
             <ImageView
+                android:id="@+id/ivCartReturn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"

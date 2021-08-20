@@ -3,6 +3,7 @@ package com.example.anushmp.decathlonapp.ViewHolder;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,6 +27,12 @@ public class List5ViewHolder extends RecyclerView.ViewHolder {
         mtvMRP=itemView.findViewById(R.id.tvMrpPrice5);
         mtvRating=itemView.findViewById(R.id.tvRating5);
         mtvPrice=itemView.findViewById(R.id.tvPrice5);
+        mtvimageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(itemView.getContext(), "Latest Products",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     public void setData(List5Model list5Model){
         mtvimageView.setImageResource(list5Model.getMimgid());

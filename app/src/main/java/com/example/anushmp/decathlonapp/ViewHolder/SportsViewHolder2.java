@@ -1,7 +1,8 @@
-package com.example.anushmp.decathlonapp.Activity;
+package com.example.anushmp.decathlonapp.ViewHolder;
 
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,5 +25,11 @@ public class SportsViewHolder2 extends RecyclerView.ViewHolder {
 
     private void intitView() {
         mtvImage2 = this.itemView.findViewById(R.id.sp2);
+        mtvImage2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(itemView.getContext(), "Search By category",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

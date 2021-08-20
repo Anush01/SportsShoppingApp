@@ -8,6 +8,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/parde/AndroidStudioProjects/Project/app/src/main/res/layout/activity_account.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/parde/AndroidStudioProjects/Project/app/src/main/res/layout/activity_account2.xml" value="0.24074074074074073" />
+        <entry key="..\:/Users/parde/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/parde/AndroidStudioProjects/Project/app/src/main/res/layout/sports_item.xml" value="0.24074074074074073" />
         <entry key="app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.5" />
         <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.3098958333333333" />

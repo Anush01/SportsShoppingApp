@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.anushmp.decathlonapp.Activity.SportsPage;
-import com.example.anushmp.decathlonapp.Activity.SportsViewHolder2;
+import com.example.anushmp.decathlonapp.ViewHolder.SportsViewHolder2;
 import com.example.anushmp.decathlonapp.ModelClass.SportsModel2;
 import com.example.anushmp.decathlonapp.R;
 

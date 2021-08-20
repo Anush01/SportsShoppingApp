@@ -26,15 +26,13 @@ import com.example.anushmp.decathlonapp.ModelClass.List3Model;
 import com.example.anushmp.decathlonapp.ModelClass.List4Model;
 import com.example.anushmp.decathlonapp.ModelClass.List5Model;
 import com.example.anushmp.decathlonapp.ModelClass.List6Model;
-import com.example.anushmp.decathlonapp.ModelClass.SportsModel2;
 import com.example.anushmp.decathlonapp.ModelClass.slide_item;
 import com.example.anushmp.decathlonapp.R;
-import com.example.anushmp.decathlonapp.item_listener;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity implements item_listener {
+public class MainActivity2 extends AppCompatActivity  {
     ImageView runningChallenge;
     ImageView cyclingChallenge;
     ImageView runningEvents;
@@ -46,6 +44,9 @@ public class MainActivity2 extends AppCompatActivity implements item_listener {
     View navIconSports;
     View navIconAccount;
     Button goToProductList;
+    Button fitnessAndCardio;
+    Button tennis;
+    Button cycling;
     private RecyclerView recyclerView;
     private RecyclerView recyclerView1;
     private RecyclerView recyclerView2;
@@ -292,11 +293,16 @@ public class MainActivity2 extends AppCompatActivity implements item_listener {
             startActivity(intent);
         });
         goToProductList = findViewById(R.id.btn1);
+        fitnessAndCardio=findViewById(R.id.btn2);
+        tennis=findViewById(R.id.btn3);
+        cycling=findViewById(R.id.btn4);
+        tennis.setOnClickListener(v -> Toast.makeText(tennis.getContext(), "Tennis Products",Toast.LENGTH_SHORT).show());
+        cycling.setOnClickListener(v -> Toast.makeText(cycling.getContext(), "Cycling Products",Toast.LENGTH_SHORT).show());
+        fitnessAndCardio.setOnClickListener(v -> Toast.makeText(fitnessAndCardio.getContext(), "Fitness And Cardio Products",Toast.LENGTH_SHORT).show());
         goToProductList.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity2.this, ProductActivity.class);
             startActivity(intent);
         });
-
     }
 
     private void nav() {
@@ -310,12 +316,6 @@ public class MainActivity2 extends AppCompatActivity implements item_listener {
             Intent intent = new Intent(MainActivity2.this, Account_Activity2.class);
             startActivity(intent);
         });
-    }
-
-
-    @Override
-    public void onItemClicked(int position, List1Model list1Model) {
-        Toast.makeText(getApplicationContext(),"New Arrival",Toast.LENGTH_SHORT).show();
     }
 
 }

@@ -3,13 +3,13 @@ package com.example.anushmp.decathlonapp.ViewHolder;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.anushmp.decathlonapp.ModelClass.List1Model;
 import com.example.anushmp.decathlonapp.R;
-import com.example.anushmp.decathlonapp.item_listener;
 
 public class List1ViewHolder extends RecyclerView.ViewHolder {
     private ImageView mtvimageView;
@@ -18,12 +18,14 @@ public class List1ViewHolder extends RecyclerView.ViewHolder {
     private TextView mtvMRP;
     private TextView mtvRating;
 
-    public List1ViewHolder(@NonNull View itemView, item_listener itemClickListener) {
+
+    public List1ViewHolder(@NonNull View itemView) {
         super(itemView);
         initView();
 
     }
-    public void setData(List1Model list1Model){
+
+    public void setData(List1Model list1Model) {
         mtvimageView.setImageResource(list1Model.getMimgid());
         mtvPrice.setText(list1Model.getMprice());
         mtvMRP.setText(list1Model.getMmrap());
@@ -32,10 +34,16 @@ public class List1ViewHolder extends RecyclerView.ViewHolder {
     }
 
     private void initView() {
-        mtvimageView=itemView.findViewById(R.id.ivShoe);
-        mtvDiscription=itemView.findViewById(R.id.tvDescrition);
-        mtvMRP=itemView.findViewById(R.id.tvMrpPrice);
-        mtvRating=itemView.findViewById(R.id.tvRating);
-        mtvPrice=itemView.findViewById(R.id.tvPrice);
+        mtvimageView = itemView.findViewById(R.id.ivShoe);
+        mtvDiscription = itemView.findViewById(R.id.tvDescrition);
+        mtvMRP = itemView.findViewById(R.id.tvMrpPrice);
+        mtvRating = itemView.findViewById(R.id.tvRating);
+        mtvPrice = itemView.findViewById(R.id.tvPrice);
+        mtvimageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(itemView.getContext(), "Latest Products",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
