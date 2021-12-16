@@ -1,5 +1,5 @@
 # Decathlon
-Decathlon App clone for Construct week at Masai
+Decathlon is your one stop shop for buying sports goods online in India.It is B2C now, open for all to buy sports products at an extremely affordable prices.And also participate in sports events hosted by decathlon.
 
 Decathlon is your one stop shop for buying sports goods online in India.It is B2C now, open for all to buy sports products at an extremely affordable prices.And also participate in sports events hosted by decathlon.
 
