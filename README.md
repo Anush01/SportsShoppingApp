@@ -1,6 +1,6 @@
 # SportsShoppingApp-Project
 
-SportsShoppingApp is your one stop shop for buying sports goods online in India.It is B2C now, open for all to buy sports products at an extremely affordable prices.And also participate in sports events hosted by decathlon.
+SportsShoppingApp is your one stop shop for buying sports goods online in India.It is B2C now, open for all to buy sports products at an extremely affordable prices.And also participate in sports events hosted by SportsShoppingApp.
 
 
 ![decath1](https://user-images.githubusercontent.com/86509987/130248358-4e056f5c-57aa-4604-8418-2be453412593.png) ![decath2](https://user-images.githubusercontent.com/86509987/130249477-9d819abb-2af4-4ee2-8c15-d4be6bdbc1ec.png) ![decath3](https://user-images.githubusercontent.com/86509987/130256095-95adf6d0-3363-4a72-afd2-84be32cd76b5.png) ![cath4](https://user-images.githubusercontent.com/86509987/130257341-8474b9e2-1d68-4c8a-9113-15fc890f052d.png)
